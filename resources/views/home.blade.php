@@ -8,7 +8,7 @@
 
     @include('sections.banner')
 
-    @include('sections.card-services')
+    @include('sections.card-service')
 
     @include('sections.goals')
 

@@ -71,7 +71,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label class="label" for="#">Mensaje</label>
+                                                <label class="label" for="message">Mensaje</label>
                                                 <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Escribe aquí..."></textarea>
                                             </div>
                                         </div>
