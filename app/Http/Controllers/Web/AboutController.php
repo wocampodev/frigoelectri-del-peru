@@ -9,6 +9,11 @@ class AboutController extends Controller
 {
     public function index()
     {
-        return view('about');
+        $messages = [
+            'location' => 'Nosostros',
+            'greeting' => 'Conocenos un poco más'
+        ];
+
+        return view('about', compact('messages'));
     }
 }

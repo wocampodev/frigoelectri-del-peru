@@ -9,6 +9,11 @@ class ServiceController extends Controller
 {
     public function index()
     {
-        return view('service');
+        $messages = [
+            'location' => 'Servicios',
+            'greeting' => 'Nuestros Servicios'
+        ];
+        
+        return view('service', compact('messages'));
     }
 }

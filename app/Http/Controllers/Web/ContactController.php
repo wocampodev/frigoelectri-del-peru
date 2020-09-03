@@ -9,6 +9,11 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return view('contact');
+        $messages = [
+            'location' => 'Contacto',
+            'greeting' => 'Te asesoramos gratis!'
+        ];
+
+        return view('contact', compact('messages'));
     }
 }

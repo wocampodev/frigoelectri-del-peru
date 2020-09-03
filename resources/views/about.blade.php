@@ -2,6 +2,8 @@
 
 @section('content')
     
+    @include('sections.hero-secondary')
+
     
 
 @endsection
