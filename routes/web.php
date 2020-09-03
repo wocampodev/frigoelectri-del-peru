@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+Route::group([
+    
+    'namespace' => 'Web',
+
+], function(){
+
+    Route::resource('/', 'HomeController', ['only' => ['index']]);
+
+    Route::resource('about', 'AboutController', ['only' => ['index']]);
+
+    Route::resource('service', 'ServiceController', ['only' => ['index']]);
+
+    Route::resource('contact', 'ContactController', ['only' => ['index']]);
+
 });

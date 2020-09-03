@@ -38,10 +38,10 @@
             <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
                 <h2 class="footer-heading">Lorem Ipsum</h2>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="py-2 d-block">Inicio</a></li>
-                    <li><a href="#" class="py-2 d-block">Nosotros</a></li>
-                    <li><a href="#" class="py-2 d-block">Servicios</a></li>
-                    <li><a href="#" class="py-2 d-block">Contacto</a></li>
+                    <li><a href="{{ url('/') }}" class="py-2 d-block">Inicio</a></li>
+                    <li><a href="{{ route('about.index') }}" class="py-2 d-block">Nosotros</a></li>
+                    <li><a href="{{ route('service.index') }}" class="py-2 d-block">Servicios</a></li>
+                    <li><a href="{{ route('contact.index') }}" class="py-2 d-block">Contacto</a></li>
                 </ul>
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
