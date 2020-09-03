@@ -16,4 +16,14 @@ class ServiceController extends Controller
         
         return view('service', compact('messages'));
     }
+
+    public function show_service()
+    {
+        $messages = [
+            'location' => 'Servicios',
+            'greeting' => 'Detalle del Servicio'
+        ];
+
+        return view('service-detail', compact('messages'));
+    }
 }

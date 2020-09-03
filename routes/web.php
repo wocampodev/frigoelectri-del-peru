@@ -22,6 +22,7 @@ Route::group([
     Route::resource('about', 'AboutController', ['only' => ['index']]);
 
     Route::resource('service', 'ServiceController', ['only' => ['index']]);
+    Route::get('/service/detail', 'ServiceController@show_service');
 
     Route::resource('contact', 'ContactController', ['only' => ['index']]);
 

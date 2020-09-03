@@ -1,16 +1,28 @@
 <section class="ftco-section bg-light">
     <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="sidebar-box">
+                    <form action="#" class="search-form">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control" placeholder="Buscar servicio">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="row d-flex">
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
                     <a href="blog-single.html" class="block-20 rounded" style="background-image: url('{{ asset('assets/images/image_1.jpg') }}');"></a>
                     <div class="text p-4">
                         <div class="meta mb-2">
-                            <div><a href="#">2 de septiembre del 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                            <div><a href="/service/detail">2 de septiembre del 2020</a></div>
+                            <div><a href="/service/detail">Admin</a></div>
+                            <div><a href="/service/detail" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                         </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                        <h3 class="heading"><a href="/service/detail">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                     </div>
                 </div>
             </div>
@@ -19,11 +31,11 @@
                     <a href="blog-single.html" class="block-20 rounded" style="background-image: url('{{ asset('assets/images/image_2.jpg') }}');"></a>
                     <div class="text p-4">
                         <div class="meta mb-2">
-                            <div><a href="#">2 de septiembre del 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                            <div><a href="/service/detail">2 de septiembre del 2020</a></div>
+                            <div><a href="/service/detail">Admin</a></div>
+                            <div><a href="/service/detail" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                         </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                        <h3 class="heading"><a href="/service/detail">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                     </div>
                 </div>
             </div>
@@ -32,11 +44,11 @@
                     <a href="blog-single.html" class="block-20 rounded" style="background-image: url('{{ asset('assets/images/image_3.jpg') }}');"></a>
                     <div class="text p-4">
                         <div class="meta mb-2">
-                            <div><a href="#">2 de septiembre del 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                            <div><a href="/service/detail">2 de septiembre del 2020</a></div>
+                            <div><a href="/service/detail">Admin</a></div>
+                            <div><a href="/service/detail" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                         </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                        <h3 class="heading"><a href="/service/detail">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                     </div>
                 </div>
             </div>
@@ -45,11 +57,11 @@
                     <a href="blog-single.html" class="block-20 rounded" style="background-image: url('{{ asset('assets/images/image_4.jpg') }}');"></a>
                     <div class="text p-4">
                         <div class="meta mb-2">
-                            <div><a href="#">2 de septiembre del 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                            <div><a href="/service/detail">2 de septiembre del 2020</a></div>
+                            <div><a href="/service/detail">Admin</a></div>
+                            <div><a href="/service/detail" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                         </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                        <h3 class="heading"><a href="/service/detail">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                     </div>
                 </div>
             </div>
@@ -58,11 +70,11 @@
                     <a href="blog-single.html" class="block-20 rounded" style="background-image: url('{{ asset('assets/images/image_1.jpg') }}');"></a>
                     <div class="text p-4">
                         <div class="meta mb-2">
-                            <div><a href="#">2 de septiembre del 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                            <div><a href="/service/detail">2 de septiembre del 2020</a></div>
+                            <div><a href="/service/detail">Admin</a></div>
+                            <div><a href="/service/detail" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                         </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                        <h3 class="heading"><a href="/service/detail">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                     </div>
                 </div>
             </div>
@@ -71,11 +83,11 @@
                     <a href="blog-single.html" class="block-20 rounded" style="background-image: url('{{ asset('assets/images/image_2.jpg') }}');"></a>
                     <div class="text p-4">
                         <div class="meta mb-2">
-                            <div><a href="#">2 de septiembre del 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                            <div><a href="/service/detail">2 de septiembre del 2020</a></div>
+                            <div><a href="/service/detail">Admin</a></div>
+                            <div><a href="/service/detail" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                         </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                        <h3 class="heading"><a href="/service/detail">Even the all-powerful Pointing has no control about the blind texts</a></h3>
                     </div>
                 </div>
             </div>
