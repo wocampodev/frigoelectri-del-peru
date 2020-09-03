@@ -14,9 +14,9 @@
                 <h2 class="footer-heading">Lorem Ipsum</h2>
                 <ul class="list-unstyled">
                     <li><a href="{{ url('/') }}" class="py-2 d-block">Inicio</a></li>
-                    <li><a href="{{ route('about.index') }}" class="py-2 d-block">Nosotros</a></li>
+                    <li><a href="{{ route('about') }}" class="py-2 d-block">Nosotros</a></li>
                     <li><a href="{{ route('service.index') }}" class="py-2 d-block">Servicios</a></li>
-                    <li><a href="{{ route('contact.index') }}" class="py-2 d-block">Contacto</a></li>
+                    <li><a href="{{ route('contact') }}" class="py-2 d-block">Contacto</a></li>
                 </ul>
             </div>
             <div class="col-sm-12 col-lg-4 mb-4 mb-md-0">

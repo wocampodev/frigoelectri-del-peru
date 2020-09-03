@@ -17,13 +17,11 @@ Route::group([
 
 ], function(){
 
-    Route::resource('/', 'HomeController', ['only' => ['index']]);
-
-    Route::resource('about', 'AboutController', ['only' => ['index']]);
+    Route::get('/', 'WebController@show_view_home')->name('home');
+    Route::get('/about', 'WebController@show_view_about')->name('about');
+    Route::get('/contact', 'WebController@show_view_contact')->name('contact');
 
     Route::resource('service', 'ServiceController', ['only' => ['index']]);
     Route::get('/service/detail', 'ServiceController@show_service');
-
-    Route::resource('contact', 'ContactController', ['only' => ['index']]);
 
 });

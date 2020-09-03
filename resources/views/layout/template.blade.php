@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/css/jquery.timepicker.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/codecix.css') }}">
 
     <title>New Tab</title>
 
@@ -51,6 +52,8 @@
         <script src="{{ asset('vendor/js/jquery.magnific-popup.min.js') }}"></script>
         <script src="{{ asset('vendor/js/scrollax.min.js') }}"></script>
         <script src="{{ asset('js/main.js') }}"></script>
+        
+        @yield('scripts')
 
     </body>
 </html>
