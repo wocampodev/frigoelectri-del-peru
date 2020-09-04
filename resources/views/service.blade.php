@@ -35,11 +35,11 @@
                                     <a href="#" class="block-20 rounded"></a>
                                     <div class="text p-4">
                                         <div class="meta mb-2">
-                                            <div><a href="/service/detail">@{{ service.name }}</a></div>
-                                            <div><a href="/service/detail">@{{ service.id }}</a></div>
-                                            <div><a href="/service/detail" class="meta-chat"><span class="fa fa-comment"></span>@{{ service.id }}</a></div>
+                                            <div><a :href="'/service-detail/' + service.id">@{{ service.id }}</a></div>
+                                            <div><a :href="'/service-detail/' + service.id">@{{ service.name }}</a></div>
+                                            <div><a :href="'/service-detail/' + service.id" class="meta-chat"><span class="fa fa-comment"></span>@{{ service.name }}</a></div>
                                         </div>
-                                        <h3 class="heading"><a href="/service/detail">@{{ service.short_description }}</a></h3>
+                                        <h3 class="heading"><a :href="'/service-detail/' + service.id">@{{ service.short_description }}</a></h3>
                                     </div>
                                 </div>
                             </div> --}}
@@ -48,17 +48,23 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col text-center">
-                    <div class="block-27">
-                        <ul>
-                        <li><a href="#">&lt;</a></li>
-                        <li class="active"><span>1</span></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&gt;</a></li>
-                        </ul>
-                    </div>
+                        <div class="block-27">
+                            <ul>
+                                <li v-if="pagination.current_page > 1">
+                                    <a href="#" @click.prevent="changePage(pagination.current_page - 1)">&lt;</a>
+                                </li>
+
+                                <li v-for="page in pagesNumber" :class="[ page == isActive ? 'active' : '']">
+                                    <a href="#" @click.prevent="changePage(page)">
+                                        @{{ page }}
+                                    </a>
+                                </li>
+                                
+                                <li v-if="pagination.current_page < pagination.last_page">
+                                    <a href="#" @click.prevent="changePage(pagination.current_page + 1)">&gt;</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -44840,24 +44840,66 @@ var service = new Vue({
     el: '#service',
     data: {
         search: '',
-        services: []
+        services: [],
+        pagination: {
+            'total': 0,
+            'current_page': 0,
+            'per_page': 0,
+            'last_page': 0,
+            'from': 0,
+            'to': 0
+        },
+        offset: 2
+    },
+    computed: {
+        isActive: function isActive() {
+            return this.pagination.current_page;
+        },
+        pagesNumber: function pagesNumber() {
+            if (!this.pagination.to) {
+                return [];
+            }
+
+            var from = this.pagination.current_page - this.offset;
+
+            if (from < 1) {
+                from = 1;
+            }
+
+            var to = from + this.offset * 2;
+
+            if (to >= this.pagination.last_page) {
+                to = this.pagination.last_page;
+            }
+
+            var pagesArray = [];
+
+            while (from <= to) {
+                pagesArray.push(from);
+                from++;
+            }
+
+            return pagesArray;
+        }
     },
     methods: {
-        getServices: function getServices() {
+        getServices: function getServices(page) {
             var _this = this;
 
-            fetch('/all-services').then(function (res) {
+            fetch('/all-services?page=' + page).then(function (res) {
                 return res.json();
             }).then(function (response) {
-                console.table(response.services);
-                console.log(response.services.data);
-                _this.setServicesList(response.services.data);
+                console.log(response);
+                //console.table(response.services)
+                //console.table(response.services.data)
+                //console.table(response.pagination)
+                _this.services = response.services.data;
+                _this.pagination = response.pagination;
             });
         },
-        setServicesList: function setServicesList(data) {
-            console.log(data);
-            this.services = data;
-            console.log(this.services);
+        changePage: function changePage(page) {
+            this.pagination.current_page = page;
+            this.getServices(page);
         }
     },
     created: function created() {

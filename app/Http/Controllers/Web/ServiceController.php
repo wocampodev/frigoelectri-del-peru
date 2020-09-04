@@ -18,13 +18,13 @@ class ServiceController extends Controller
         return view('service', compact('messages'));
     }
 
-    public function show_all_services()
+    public function show_all_services(Request $request)
     {
-        $services = Service::select('id', 'name', 'short_description')->paginate(8);
+        $services = Service::select('id', 'name', 'short_description')->orderBy('id', 'DESC')->paginate(8);
 
         return [
             'services' => $services,
-            'paginate' => [
+            'pagination' => [
                 'total'         => $services->total(),
                 'current_page'  => $services->currentPage(),
                 'per_page'      => $services->perPage(),
