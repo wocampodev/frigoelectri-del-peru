@@ -22,6 +22,7 @@ Route::group([
     Route::get('/contact', 'WebController@show_view_contact')->name('contact');
 
     Route::resource('service', 'ServiceController', ['only' => ['index']]);
+    Route::get('all-services', 'ServiceController@show_all_services');
     Route::get('/service/detail', 'ServiceController@show_service');
 
 });

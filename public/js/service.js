@@ -44834,12 +44834,34 @@ __webpack_require__(9);
 window.Vue = __webpack_require__(33);
 
 var token = document.head.querySelector('meta[name="csrf-token"]');
+console.log(token);
 
 var service = new Vue({
     el: '#service',
     data: {
         search: '',
-        list: []
+        services: []
+    },
+    methods: {
+        getServices: function getServices() {
+            var _this = this;
+
+            fetch('/all-services').then(function (res) {
+                return res.json();
+            }).then(function (response) {
+                console.table(response.services);
+                console.log(response.services.data);
+                _this.setServicesList(response.services.data);
+            });
+        },
+        setServicesList: function setServicesList(data) {
+            console.log(data);
+            this.services = data;
+            console.log(this.services);
+        }
+    },
+    created: function created() {
+        this.getServices();
     }
 });
 
