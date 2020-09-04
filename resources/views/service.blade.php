@@ -13,7 +13,7 @@
                             <form class="search-form">
                                 <div class="form-group">
                                     <span class="fa fa-search"></span>
-                                    <input type="text" class="form-control" placeholder="Buscar servicio" v-model="search">
+                                    <input type="text" class="form-control" placeholder="Buscar servicio" v-model="search" @keyup.enter="filterServices">
                                     <span>@{{ search }}</span>
                                 </div>
                             </form>
@@ -21,8 +21,8 @@
                     </div>
                 </div>
                 <div class="row d-flex">
-                    <ul>
-                        <li v-for="service in services">
+                    <ul style="display: inline-block; list-style: none;">
+                        <li v-for="service in searchUser">
                             <table style="width: 100%;">
                                 <tbody>
                                     <td><a :href="'/service-detail/' + service.id">@{{ service.id }}</a></td>

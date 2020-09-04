@@ -44880,11 +44880,18 @@ var service = new Vue({
             }
 
             return pagesArray;
+        },
+        searchUser: function searchUser() {
+            var _this = this;
+
+            return this.services.filter(function (item) {
+                return item.name.toLowerCase().includes(_this.search);
+            });
         }
     },
     methods: {
         getServices: function getServices(page) {
-            var _this = this;
+            var _this2 = this;
 
             fetch('/all-services?page=' + page).then(function (res) {
                 return res.json();
@@ -44893,8 +44900,8 @@ var service = new Vue({
                 //console.table(response.services)
                 //console.table(response.services.data)
                 //console.table(response.pagination)
-                _this.services = response.services.data;
-                _this.pagination = response.pagination;
+                _this2.services = response.services.data;
+                _this2.pagination = response.pagination;
             });
         },
         changePage: function changePage(page) {

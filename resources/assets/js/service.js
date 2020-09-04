@@ -49,6 +49,9 @@ const service = new Vue({
             }
 
             return pagesArray
+        },
+        searchUser: function (){
+            return this.services.filter((item) => item.name.toLowerCase().includes(this.search))
         }
     },
     methods: {
@@ -67,7 +70,7 @@ const service = new Vue({
         changePage: function(page) {
             this.pagination.current_page = page
             this.getServices(page)
-        }
+        },
     },
     created: function() {
         this.getServices()
