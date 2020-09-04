@@ -58,7 +58,7 @@ const service = new Vue({
 
             return pagesArray
         },
-        searchUser: function (){
+        searchService: function (){
             return this.services.filter((item) => item.name.toLowerCase().includes(this.search))
         }
     },

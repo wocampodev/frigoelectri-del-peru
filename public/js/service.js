@@ -44889,7 +44889,7 @@ var service = new Vue({
 
             return pagesArray;
         },
-        searchUser: function searchUser() {
+        searchService: function searchService() {
             var _this = this;
 
             return this.services.filter(function (item) {
