@@ -44850,8 +44850,16 @@ var service = new Vue({
             'to': 0
         },
         offset: 2
+        //isNotSearching: true
     },
     computed: {
+        isNotSearching: function isNotSearching() {
+            if (this.search !== '') {
+                return false;
+            } else {
+                return true;
+            }
+        },
         isActive: function isActive() {
             return this.pagination.current_page;
         },

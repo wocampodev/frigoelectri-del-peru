@@ -18,9 +18,17 @@ const service = new Vue({
             'from': 0,
             'to': 0
         },
-        offset: 2
+        offset: 2,
+        //isNotSearching: true
     },
     computed: {
+        isNotSearching: function() {
+            if (this.search !== '') {
+                return false
+            } else {
+                return true
+            }
+        },
         isActive: function() {
             return this.pagination.current_page
         },

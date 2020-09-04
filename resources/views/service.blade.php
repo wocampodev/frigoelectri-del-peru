@@ -14,7 +14,6 @@
                                 <div class="form-group">
                                     <span class="fa fa-search"></span>
                                     <input type="text" class="form-control" placeholder="Buscar servicio" v-model="search" @keyup.enter="filterServices">
-                                    <span>@{{ search }}</span>
                                 </div>
                             </form>
                         </div>
@@ -46,7 +45,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="row mt-5">
+                <div class="row mt-5" v-if="isNotSearching">
                     <div class="col text-center">
                         <div class="block-27">
                             <ul>
