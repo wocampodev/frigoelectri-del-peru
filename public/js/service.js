@@ -44834,7 +44834,7 @@ __webpack_require__(9);
 window.Vue = __webpack_require__(33);
 
 var token = document.head.querySelector('meta[name="csrf-token"]');
-console.log(token);
+//console.log(token);
 
 var service = new Vue({
     el: '#service',
@@ -44849,8 +44849,9 @@ var service = new Vue({
             'from': 0,
             'to': 0
         },
-        offset: 2
+        offset: 2,
         //isNotSearching: true
+        allServices: []
     },
     computed: {
         isNotSearching: function isNotSearching() {
@@ -44905,11 +44906,10 @@ var service = new Vue({
                 return res.json();
             }).then(function (response) {
                 console.log(response);
-                //console.table(response.services)
-                //console.table(response.services.data)
-                //console.table(response.pagination)
                 _this2.services = response.services.data;
                 _this2.pagination = response.pagination;
+                _this2.allServices = response.all;
+                console.log(_this2.allServices);
             });
         },
         changePage: function changePage(page) {

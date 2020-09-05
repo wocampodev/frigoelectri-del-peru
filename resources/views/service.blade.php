@@ -19,50 +19,52 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex">
-                    {{-- <ul style="display: inline-block; list-style: none;">
-                        <li v-for="service in searchSerivce">
-                            <table style="width: 100%;">
-                                <tbody>
-                                    <td><a :href="'/service-detail/' + service.id">@{{ service.id }}</a></td>
-                                    <td><span>@{{ service.name }}</span></td>
-                                    <td><span>@{{ service.short_description }}</span></td>
-                                </tbody>
-                            </table>
-                        </li>
-                    </ul> --}}
-                    <div class="col-md-4 d-flex ftco-animate" v-for="service in searchService">
-                        <div class="blog-entry align-self-stretch">
-                            <a href="#" class="block-20 rounded"></a>
-                            <div class="text p-4">
-                                <div class="meta mb-2">
-                                    <div><a :href="'/service-detail/' + service.id">@{{ service.id }}</a></div>
-                                    <div><a :href="'/service-detail/' + service.id">@{{ service.name }}</a></div>
-                                    <div><a :href="'/service-detail/' + service.id" class="meta-chat"><span class="fa fa-comment"></span>@{{ service.name }}</a></div>
+                <div>
+                    <div class="row d-flex">
+                        <ul style="display: inline-block; list-style: none;">
+                            <li v-for="service in searchService">
+                                <table style="width: 100%;">
+                                    <tbody>
+                                        <td><a :href="'/service-detail/' + service.id">@{{ service.id }}</a></td>
+                                        <td><span>@{{ service.name }}</span></td>
+                                        <td><span>@{{ service.short_description }}</span></td>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                        {{-- <div class="col-md-4 d-flex ftco-animate" v-for="service in searchService">
+                            <div class="blog-entry align-self-stretch">
+                                <a href="#" class="block-20 rounded"></a>
+                                <div class="text p-4">
+                                    <div class="meta mb-2">
+                                        <div><a :href="'/service-detail/' + service.id">@{{ service.id }}</a></div>
+                                        <div><a :href="'/service-detail/' + service.id">@{{ service.name }}</a></div>
+                                        <div><a :href="'/service-detail/' + service.id" class="meta-chat"><span class="fa fa-comment"></span>@{{ service.name }}</a></div>
+                                    </div>
+                                    <h3 class="heading"><a :href="'/service-detail/' + service.id">@{{ service.short_description }}</a></h3>
                                 </div>
-                                <h3 class="heading"><a :href="'/service-detail/' + service.id">@{{ service.short_description }}</a></h3>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
-                </div>
-                <div class="row mt-5" v-if="isNotSearching">
-                    <div class="col text-center">
-                        <div class="block-27">
-                            <ul>
-                                <li v-if="pagination.current_page > 1">
-                                    <a href="#" @click.prevent="changePage(pagination.current_page - 1)">&lt;</a>
-                                </li>
-
-                                <li v-for="page in pagesNumber" :class="[ page == isActive ? 'active' : '']">
-                                    <a href="#" @click.prevent="changePage(page)">
-                                        @{{ page }}
-                                    </a>
-                                </li>
-                                
-                                <li v-if="pagination.current_page < pagination.last_page">
-                                    <a href="#" @click.prevent="changePage(pagination.current_page + 1)">&gt;</a>
-                                </li>
-                            </ul>
+                    <div class="row mt-5" v-if="isNotSearching">
+                        <div class="col text-center">
+                            <div class="block-27">
+                                <ul>
+                                    <li v-if="pagination.current_page > 1">
+                                        <a href="#" @click.prevent="changePage(pagination.current_page - 1)">&lt;</a>
+                                    </li>
+    
+                                    <li v-for="page in pagesNumber" :class="[ page == isActive ? 'active' : '']">
+                                        <a href="#" @click.prevent="changePage(page)">
+                                            @{{ page }}
+                                        </a>
+                                    </li>
+                                    
+                                    <li v-if="pagination.current_page < pagination.last_page">
+                                        <a href="#" @click.prevent="changePage(pagination.current_page + 1)">&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

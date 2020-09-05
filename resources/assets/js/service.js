@@ -3,7 +3,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 let token = document.head.querySelector('meta[name="csrf-token"]');
-console.log(token);
+//console.log(token);
 
 const service = new Vue({
     el: '#service',
@@ -20,6 +20,7 @@ const service = new Vue({
         },
         offset: 2,
         //isNotSearching: true
+        allServices: []
     },
     computed: {
         isNotSearching: function() {
@@ -68,11 +69,10 @@ const service = new Vue({
             .then(res => res.json())
             .then(response => {
                 console.log(response)
-                //console.table(response.services)
-                //console.table(response.services.data)
-                //console.table(response.pagination)
                 this.services = response.services.data
                 this.pagination = response.pagination
+                this.allServices = response.all
+                console.log(this.allServices)
             })
         },
         changePage: function(page) {
