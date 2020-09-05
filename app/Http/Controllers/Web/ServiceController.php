@@ -22,10 +22,10 @@ class ServiceController extends Controller
     {
         $services = Service::select('id', 'name', 'short_description')->orderBy('id', 'DESC')->paginate(6);
 
-        $all = Service::select('*')->get();
+        //$all = Service::select('*')->get();
 
         return [
-            'all' => $all,
+            //'all' => $all,
             'services' => $services,
             'pagination' => [
                 'total'         => $services->total(),

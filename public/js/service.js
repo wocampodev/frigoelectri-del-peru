@@ -44849,9 +44849,9 @@ var service = new Vue({
             'from': 0,
             'to': 0
         },
-        offset: 2,
+        offset: 2
         //isNotSearching: true
-        allServices: []
+        //allServices: []
     },
     computed: {
         isNotSearching: function isNotSearching() {
@@ -44905,11 +44905,11 @@ var service = new Vue({
             fetch('/all-services?page=' + page).then(function (res) {
                 return res.json();
             }).then(function (response) {
-                console.log(response);
+                //console.log(response)
                 _this2.services = response.services.data;
                 _this2.pagination = response.pagination;
-                _this2.allServices = response.all;
-                console.log(_this2.allServices);
+                //this.allServices = response.all
+                //console.log(this.allServices)
             });
         },
         changePage: function changePage(page) {

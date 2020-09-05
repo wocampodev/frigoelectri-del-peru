@@ -20,7 +20,7 @@ const service = new Vue({
         },
         offset: 2,
         //isNotSearching: true
-        allServices: []
+        //allServices: []
     },
     computed: {
         isNotSearching: function() {
@@ -68,11 +68,11 @@ const service = new Vue({
             fetch('/all-services?page='+page)
             .then(res => res.json())
             .then(response => {
-                console.log(response)
+                //console.log(response)
                 this.services = response.services.data
                 this.pagination = response.pagination
-                this.allServices = response.all
-                console.log(this.allServices)
+                //this.allServices = response.all
+                //console.log(this.allServices)
             })
         },
         changePage: function(page) {
