@@ -7,7 +7,7 @@
     <section class="ftco-section bg-light">
         <div class="container" id="service">
             <div class="row d-flex">
-                <ul style="display: inline-block; list-style: none;">
+                {{-- <ul style="display: inline-block; list-style: none;">
                     <li v-for="service in services">
                         <table style="width: 100%;">
                             <tbody>
@@ -17,25 +17,8 @@
                             </tbody>
                         </table>
                     </li>
-                </ul>
-                {{-- <ul style="display: inline-block; list-style: none;">
-                    <li v-for="service in services">
-                        <div class="col-md-4 d-flex ftco-animate">
-                            <div class="blog-entry align-self-stretch">
-                                <a href="#" class="block-20 rounded"></a>
-                                <div class="text p-4">
-                                    <div class="meta mb-2">
-                                        <div><a :href="'/servicios/' + service.slug" v-html="service.slug"></a></div>
-                                        <div><a :href="'/servicios/' + service.slug" v-html="service.name"></a></div>
-                                        <div><a :href="'/servicios/' + service.slug" class="meta-chat" v-html="service.name"><span class="fa fa-comment"></span></a></div>
-                                    </div>
-                                    <h3 class="heading"><a :href="'/servicios/' + service.slug" v-html="service.short_description"></a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
                 </ul> --}}
-                {{-- <div class="col-md-4 d-flex ftco-animate" v-for="service in services">
+                <div class="col-md-4 d-flex ftco-animate" v-for="service in services">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"></a>
                         <div class="text p-4">
@@ -47,7 +30,7 @@
                             <h3 class="heading"><a :href="'/servicios/' + service.slug" v-html="service.short_description"></a></h3>
                         </div>
                     </div>
-                </div> --}}
+                </div>
             </div>
             <div class="row mt-5" {{-- v-if="isNotSearching" --}}>
                 <div class="col text-center">

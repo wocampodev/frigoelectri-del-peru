@@ -38,13 +38,15 @@ class ServiceController extends Controller
         ];
     }
 
-    public function show_service()
+    public function show_service(Request $request)
     {
+        $service = Service::where('slug', $request->slug)->firstOrFail();
+        $services_random = Service::inRandomOrder()->limit(8)->get();
         $messages = [
             'location' => 'Servicios',
-            'greeting' => 'Detalle del Servicio'
+            'greeting' => $service->name
         ];
 
-        return view('service-detail', compact('messages'));
+        return view('service-detail', compact('messages', 'service', 'services_random'));
     }
 }

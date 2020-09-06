@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/css/bootstrap-datepicker.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/css/jquery.timepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/css/jquery-ui.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/codecix.css') }}">
@@ -52,6 +53,7 @@
         <script src="{{ asset('vendor/js/jquery.timepicker.min.js') }}"></script>
         <script src="{{ asset('vendor/js/owl.carousel.min.js') }}"></script>
         <script src="{{ asset('vendor/js/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('vendor/js/jquery-ui.min.js') }}">
         <script src="{{ asset('vendor/js/scrollax.min.js') }}"></script>
         <script src="{{ asset('js/main.js') }}"></script>
         
