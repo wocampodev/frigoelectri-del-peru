@@ -21,7 +21,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}" id="my-token">
 
-    <title>New Tab</title>
+    <title>Frigo Electri E.I.R.L</title>
 
 </head>
     <body>

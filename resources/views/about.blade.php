@@ -4,6 +4,6 @@
     
     @include('sections.hero-secondary')
 
-    {{-- NOSOTROS --}}
+    
 
 @endsection

@@ -1,0 +1,116 @@
+:root {
+    --main-color: #0056b3;
+    --secondary-color: #ffd31d;
+}
+
+/* 
+=========================================
+                NAVBAR
+=========================================
+*/
+
+.container-fluid {
+    width: 85%;
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    .container-fluid {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px){
+    .container-fluid {
+        width: 85%;
+    }
+}
+
+.search-box-nav {
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 40%;
+}
+
+@media (max-width: 768px) { 
+    .search-box-nav {
+        margin-top: 10px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+.search-form .form-group input {
+    border: 2px solid var(--main-color);
+}
+
+.search-form .fa-search {
+    color: var(--main-color);
+}
+
+/* 
+=========================================
+                REASONS
+=========================================
+*/
+
+@media (max-width: 767.98px){
+    .img-video {
+        height: 576px;
+    }
+}
+
+/* 
+=========================================
+                BANNER
+=========================================
+*/
+
+.btn-contact {
+    margin-top: 5px;
+    background-color: white !important;
+    color: #333 !important;
+}
+
+.btn-contact:hover {
+    color: var(--main-color) !important;
+}
+
+/* 
+=========================================
+            CARD SERVICIOS
+=========================================
+*/
+
+.card-service-home {
+    margin-top: 50px;
+}
+
+.btn-view-services:hover {
+    background: #ffd31d !important;
+    border: 1px solid #ffd31d !important;
+    color: var(--main-color) !important;
+}
+
+/* 
+=========================================
+            FOOTER
+=========================================
+*/
+
+.footer {
+    background-color: var(--main-color);
+}
+
+.footer a:hover, .footer span:hover, .footer i:hover, .footer p {
+    color: white !important;
+}
+
+a.text-codecix:hover {
+    color: #333 !important;
+}
