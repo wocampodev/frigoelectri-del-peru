@@ -8,7 +8,7 @@ let token = document.head.querySelector('meta[name="csrf-token"]');
 const service = new Vue({
     el: '#service',
     data: {
-        search: '',
+        //search: '',
         services: [],
         pagination: {
             'total': 0,
@@ -23,13 +23,13 @@ const service = new Vue({
         //allServices: []
     },
     computed: {
-        isNotSearching: function() {
-            if (this.search !== '') {
-                return false
-            } else {
-                return true
-            }
-        },
+        //isNotSearching: function() {
+        //if (this.search !== '') {
+        //        return false
+        //    } else {
+        //        return true
+        //    }
+        //},
         isActive: function() {
             return this.pagination.current_page
         },
@@ -59,9 +59,9 @@ const service = new Vue({
 
             return pagesArray
         },
-        searchService: function (){
-            return this.services.filter((item) => item.name.toLowerCase().includes(this.search))
-        }
+        //searchService: function (){
+        //    return this.services.filter((item) => item.name.toLowerCase().includes(this.search))
+        //}
     },
     methods: {
         getServices: function(page) {

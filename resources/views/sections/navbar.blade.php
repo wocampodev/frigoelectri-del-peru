@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav mr-auto" id="nav-listener">
                 <li class="nav-item active"><a href="/" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="/nostros" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="/nosotros" class="nav-link">Nosotros</a></li>
                 <li class="nav-item"><a href="/servicios" class="nav-link">Servicios</a></li>
                 <li class="nav-item"><a href="/contacto" class="nav-link">Contacto</a></li>
             </ul>

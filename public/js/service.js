@@ -44839,7 +44839,7 @@ var token = document.head.querySelector('meta[name="csrf-token"]');
 var service = new Vue({
     el: '#service',
     data: {
-        search: '',
+        //search: '',
         services: [],
         pagination: {
             'total': 0,
@@ -44854,13 +44854,13 @@ var service = new Vue({
         //allServices: []
     },
     computed: {
-        isNotSearching: function isNotSearching() {
-            if (this.search !== '') {
-                return false;
-            } else {
-                return true;
-            }
-        },
+        //isNotSearching: function() {
+        //if (this.search !== '') {
+        //        return false
+        //    } else {
+        //        return true
+        //    }
+        //},
         isActive: function isActive() {
             return this.pagination.current_page;
         },
@@ -44889,25 +44889,21 @@ var service = new Vue({
             }
 
             return pagesArray;
-        },
-        searchService: function searchService() {
-            var _this = this;
-
-            return this.services.filter(function (item) {
-                return item.name.toLowerCase().includes(_this.search);
-            });
         }
+        //searchService: function (){
+        //    return this.services.filter((item) => item.name.toLowerCase().includes(this.search))
+        //}
     },
     methods: {
         getServices: function getServices(page) {
-            var _this2 = this;
+            var _this = this;
 
             fetch('/all-services?page=' + page).then(function (res) {
                 return res.json();
             }).then(function (response) {
                 //console.log(response)
-                _this2.services = response.services.data;
-                _this2.pagination = response.pagination;
+                _this.services = response.services.data;
+                _this.pagination = response.pagination;
                 //this.allServices = response.all
                 //console.log(this.allServices)
             });

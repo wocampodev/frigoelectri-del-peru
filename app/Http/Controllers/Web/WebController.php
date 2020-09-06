@@ -3,13 +3,15 @@
 namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
+use App\Service;
 use App\Http\Controllers\Controller;
 
 class WebController extends Controller
 {
     public function show_view_home()
     {
-        return view('home');
+        $services = Service::select('name', 'slug', 'short_description')->get()->take(4);
+        return view('home', compact('services'));
     }
 
     public function show_view_about()

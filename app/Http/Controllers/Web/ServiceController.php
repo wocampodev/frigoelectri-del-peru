@@ -20,7 +20,7 @@ class ServiceController extends Controller
 
     public function show_all_services(Request $request)
     {
-        $services = Service::select('id', 'name', 'short_description')->orderBy('id', 'DESC')->paginate(6);
+        $services = Service::select('slug', 'name', 'short_description')/* ->orderBy('id', 'DESC') */->paginate(6);
 
         //$all = Service::select('*')->get();
 
