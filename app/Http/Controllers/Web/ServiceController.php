@@ -14,8 +14,10 @@ class ServiceController extends Controller
             'location' => 'Servicios',
             'greeting' => 'Nuestros Servicios'
         ];
+
+        $services = Service::select('slug', 'name', 'short_description')->paginate(6);
         
-        return view('service', compact('messages'));
+        return view('service', compact('messages', 'services'));
     }
 
     public function show_all_services(Request $request)
