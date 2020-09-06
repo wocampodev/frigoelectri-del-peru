@@ -44914,7 +44914,7 @@ var service = new Vue({
         }
     },
     created: function created() {
-        this.getServices();
+        this.getServices(1);
     }
 });
 

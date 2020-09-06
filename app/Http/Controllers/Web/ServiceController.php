@@ -49,4 +49,19 @@ class ServiceController extends Controller
 
         return view('service-detail', compact('messages', 'service', 'services_random'));
     }
+
+    public function search_service(Request $request)
+    {
+        $term = $request->term;
+        //dd($term);
+        $data = Service::where('name', 'LIKE' ,'%'.$term.'%')->get();
+
+        $services = [];
+
+        foreach ($data as $item) {
+            $services[] = ['label' => $item->name, 'slug' => $item->slug];
+        }
+
+        return $services;
+    }
 }

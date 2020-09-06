@@ -81,6 +81,6 @@ const service = new Vue({
         },
     },
     created: function() {
-        this.getServices()
+        this.getServices(1)
     }
 });

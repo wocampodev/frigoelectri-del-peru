@@ -53,9 +53,10 @@
         <script src="{{ asset('vendor/js/jquery.timepicker.min.js') }}"></script>
         <script src="{{ asset('vendor/js/owl.carousel.min.js') }}"></script>
         <script src="{{ asset('vendor/js/jquery.magnific-popup.min.js') }}"></script>
-        <script src="{{ asset('vendor/js/jquery-ui.min.js') }}">
+        <script src="{{ asset('vendor/js/jquery-ui.min.js') }}"></script>
         <script src="{{ asset('vendor/js/scrollax.min.js') }}"></script>
         <script src="{{ asset('js/main.js') }}"></script>
+        <script src="{{ asset('js/search.js') }}"></script>
         
         @yield('scripts')
 

@@ -23,6 +23,7 @@ Route::group([
 
     Route::resource('servicios', 'ServiceController', ['only' => ['index']]);
     Route::get('all-services', 'ServiceController@show_all_services');
-    Route::get('/servicios/{slug}', 'ServiceController@show_service');
+    Route::get('servicios/{slug}', 'ServiceController@show_service');
+    Route::get('search/service', 'ServiceController@search_service');
 
 });

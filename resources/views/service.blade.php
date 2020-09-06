@@ -22,22 +22,24 @@
                         </div>
                     </div> 
                 </div>
-                <div class="row mt-5">
-                    <div class="col text-center">
-                        <div class="block-27">
-                            <ul>
-                                <li v-if="pagination.current_page > 1">
-                                    <a href="#" @click.prevent="changePage(pagination.current_page - 1)">&lt;</a>
-                                </li>
-
-                                <li v-for="page in pagesNumber" :class="[ page == isActive ? 'active' : '']">
-                                    <a href="#" @click.prevent="changePage(page)" v-html="page"></a>
-                                </li>
-                                
-                                <li v-if="pagination.current_page < pagination.last_page">
-                                    <a href="#" @click.prevent="changePage(pagination.current_page + 1)">&gt;</a>
-                                </li>
-                            </ul>
+                <div class="col-md-12">
+                    <div class="row mt-5">
+                        <div class="col text-center">
+                            <div class="block-27">
+                                <ul>
+                                    <li v-if="pagination.current_page > 1">
+                                        <a href="#" @click.prevent="changePage(pagination.current_page - 1)">&lt;</a>
+                                    </li>
+    
+                                    <li v-for="page in pagesNumber" :class="[ page == isActive ? 'active' : '']">
+                                        <a href="#" @click.prevent="changePage(page)" v-html="page"></a>
+                                    </li>
+                                    
+                                    <li v-if="pagination.current_page < pagination.last_page">
+                                        <a href="#" @click.prevent="changePage(pagination.current_page + 1)">&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

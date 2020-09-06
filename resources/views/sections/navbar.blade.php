@@ -15,7 +15,7 @@
                 <form action="#" class="search-form">
                     <div class="form-group">
                         <span class="fa fa-search"></span>
-                        <input type="text" class="form-control" placeholder="Buscar servicio...">
+                        <input type="text" class="form-control" id="search" name="search" placeholder="Buscar servicio...">
                     </div>
                 </form>
             </div>
