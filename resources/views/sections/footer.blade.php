@@ -5,7 +5,7 @@
                 <h2 class="footer-heading">Redes Sociales</h2>
                 <p>Encuentranos en Facebook como: Frigo Electri del Perú E.I.R.L</p>
                 <ul class="ftco-footer-social p-0">
-                    <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook text-white"></span></a></li>
+                    <li class="ftco-animate"><a href="https://web.facebook.com/frigoelectridelperu" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook text-white"></span></a></li>
                 </ul>
             </div>
             <div class="col-sm-12 col-lg-4 pl-lg-5 mb-4 mb-md-0">
@@ -13,7 +13,7 @@
                 <ul class="list-unstyled">
                     <li><a href="{{ url('/') }}" class="py-2 d-block">Inicio</a></li>
                     <li><a href="{{ route('about') }}" class="py-2 d-block">Nosotros</a></li>
-                    <li><a href="{{ route('service.index') }}" class="py-2 d-block">Servicios</a></li>
+                    <li><a href="{{ route('servicios.index') }}" class="py-2 d-block">Servicios</a></li>
                     <li><a href="{{ route('contact') }}" class="py-2 d-block">Contacto</a></li>
                 </ul>
             </div>
@@ -22,8 +22,8 @@
                 <div class="block-23 mb-3">
                     <ul>
                         <li><span class="icon fa fa-map"></span><span class="text">Jr. Tupac Amaru Nro. 131 P.J. Collique 1ra Etapa (Alt. Colegio Peru-Holanda)</span></li>
-                        <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+51 934 466 479</span></a></li>
-                        <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">frigoelectridelperueirl@gmail.com</span></a></li>
+                        <li><a href="tel://51934466479"><span class="icon fa fa-phone"></span><span class="text">+51 934 466 479</span></a></li>
+                        <li><a href="mailto:frigoelectridelperueirl@gmail.com"><span class="icon fa fa-paper-plane"></span><span class="text">frigoelectridelperueirl@gmail.com</span></a></li>
                     </ul>
                 </div>
             </div>

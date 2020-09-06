@@ -7,9 +7,9 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav mr-auto" id="nav-listener">
                 <li class="nav-item active"><a href="/" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="/about" class="nav-link">Nosotros</a></li>
-                <li class="nav-item"><a href="/service" class="nav-link">Servicios</a></li>
-                <li class="nav-item"><a href="/contact" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="/nostros" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="/servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="/contacto" class="nav-link">Contacto</a></li>
             </ul>
             <div class="search-box-nav ml-auto">
                 <form action="#" class="search-form">

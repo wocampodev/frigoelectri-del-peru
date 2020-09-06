@@ -57,7 +57,7 @@
         </div>
         <div class="row d-flex justify-content-center card-service-home">
             <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-                <a href="#" class="btn btn-secondary btn-view-services mx-auto">Ver todos</a>
+                <a href="{{ route('servicios.index') }}" class="btn btn-secondary btn-view-services mx-auto">Ver todos</a>
             </div>
         </div>
     </div>

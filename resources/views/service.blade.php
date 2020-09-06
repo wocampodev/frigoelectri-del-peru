@@ -7,7 +7,7 @@
     <div id="service">
         <section class="ftco-section bg-light">
             <div class="container">
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-12">
                         <div class="sidebar-box">
                             <form class="search-form">
@@ -18,10 +18,10 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <div>
                     <div class="row d-flex">
-                        <ul style="display: inline-block; list-style: none;">
+                        {{-- <ul style="display: inline-block; list-style: none;">
                             <li v-for="service in searchService">
                                 <table style="width: 100%;">
                                     <tbody>
@@ -31,8 +31,8 @@
                                     </tbody>
                                 </table>
                             </li>
-                        </ul>
-                        {{-- <div class="col-md-4 d-flex ftco-animate" v-for="service in searchService">
+                        </ul> --}}
+                        <div class="col-md-4 d-flex ftco-animate" v-for="service in searchService">
                             <div class="blog-entry align-self-stretch">
                                 <a href="#" class="block-20 rounded"></a>
                                 <div class="text p-4">
@@ -44,7 +44,7 @@
                                     <h3 class="heading"><a :href="'/service-detail/' + service.id">@{{ service.short_description }}</a></h3>
                                 </div>
                             </div>
-                        </div> --}}
+                        </div>
                     </div>
                     <div class="row mt-5" v-if="isNotSearching">
                         <div class="col text-center">
