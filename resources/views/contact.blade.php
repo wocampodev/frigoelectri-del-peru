@@ -61,10 +61,16 @@
                                             <input type="email" class="form-control" name="email" id="email" placeholder="Escribe aquí...">
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="label" for="subject">Asunto:</label>
-                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Escribe aquí...">
+                                            <label class="label" for="phone">Celular:</label>
+                                            <input type="number" class="form-control" name="phone" id="phone" placeholder="Escribe aquí...">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"> 
+                                        <div class="form-group">
+                                            <label class="label" for="ruc">RUC (Opcional):</label>
+                                            <input type="number" class="form-control" name="ruc" id="ruc" placeholder="Escribe aquí...">
                                         </div>
                                     </div>
                                     <div class="col-md-12">

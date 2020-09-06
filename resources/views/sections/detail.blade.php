@@ -24,7 +24,7 @@
   <div class="container">
     <div class="row d-md-flex justify-content-center">
       <div class="col-md-12 col-lg-8 half p-3 py-5 pl-lg-5 ftco-animate fadeInUp ftco-animated">
-        <h2 class="mb-4">Solicitar servicio</h2>
+        <h2 class="mb-4 text-center">Solicitar servicio</h2>
         <form action="#" class="appointment">
           <div class="row">
             <div class="col-md-12">
@@ -51,7 +51,23 @@
               <div class="form-group">
                 <div class="input-wrap">
                   <div class="icon"><span class="fa fa-paper-plane"></span></div>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-wrap">
+                  <div class="icon"><span class="fa fa-phone"></span></div>
+                  <input type="number" class="form-control" id="phone" name="phone" placeholder="Celular">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-wrap">
+                  <div class="icon"><span class="fa fa-calendar"></span></div>
+                  <input class="form-control appointment_date" id="date" name="date" placeholder="Fecha">
                 </div>
               </div>
             </div>
