@@ -11,12 +11,12 @@
                     <div class="col-md-4 d-flex ftco-animate">
                         <div style="width: 100%">
                             <div class="blog-entry align-self-stretch">
-                                <a href="#" class="block-20 rounded" style="background-image: url('/assets/images/gallery-1.jpg')"></a>
+                                <a href="/servicios/{{ $service->slug }}" class="block-20 rounded" style="background-image: url('/assets/images/gallery-5.jpg')"></a>
                                 <div class="text p-4">
                                     <div class="meta mb-2">
-                                        <div style="font-weight: bold;"><a href="/servicios/{{ $service->slug }}"></a> {{ $service->name }}</div>
+                                        <div>{{ $service->name }}</div>
                                     </div>
-                                    <h3 class="heading" style="font-size: 12px;"><a href="/servicios/{{ $service->slug }}"></a> {{ $service->name }}</h3>
+                                    <h3 class="heading">{{ $service->name }}</h3>
                                 </div>
                             </div>
                         </div> 
