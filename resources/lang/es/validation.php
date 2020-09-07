@@ -146,6 +146,16 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        //Contacto
+        'name' => 'nombres',
+        'phone' => 'celular',
+        'email' => 'correo',
+        'business' => 'empresa',
+        'message' => 'mensaje'
+
+        //Servicios
+        
+    ],
 
 ];

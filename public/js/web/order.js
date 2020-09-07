@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 48);
+/******/ 	return __webpack_require__(__webpack_require__.s = 46);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -44821,16 +44821,14 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* 43 */,
 /* 44 */,
 /* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(49);
+module.exports = __webpack_require__(47);
 
 
 /***/ }),
-/* 49 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -44841,27 +44839,29 @@ window.Vue = __webpack_require__(33);
 
 var token = document.getElementById('my-token').getAttribute('content');
 
-var contact = new Vue({
-    el: '#contact',
+var order = new Vue({
+    el: '#order',
     data: {
+        service: document.getElementById('service_id').value,
         name: '',
         email: '',
         phone: '',
-        company: '',
+        date: new Date().toISOString().slice(0, 10),
         message: ''
     },
     methods: {
-        sendContact: function sendContact() {
+        sendOrder: function sendOrder() {
             var _this = this;
 
             var data = {
+                service: this.service,
                 name: this.name,
                 email: this.email,
                 phone: this.phone,
-                company: this.company,
+                date: this.date,
                 message: this.message
             };
-            fetch('/contact-web', {
+            fetch('/order-web', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
@@ -44890,14 +44890,14 @@ var contact = new Vue({
             this.name = '';
             this.email = '';
             this.phone = '';
-            this.company = '';
+            this.date = new Date().toISOString().slice(0, 10);
             this.message = '';
         },
         alertSuccess: function alertSuccess() {
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: 'Excelente' + this.name + 'nos comunicaremos contigo',
+                title: 'Hemos recibido tu pedido, pronto nos comunicaremos contigo',
                 showConfirmButton: false,
                 timer: 2000
             });

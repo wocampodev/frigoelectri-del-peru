@@ -20,6 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string('name', 150);
             $table->char('phone', 14);
             $table->string('email', 80)->nullable();
+            $table->date('date')->nullable();
             $table->text('message');
             $table->timestamps();
 

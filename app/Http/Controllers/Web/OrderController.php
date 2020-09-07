@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -13,75 +13,81 @@ use App\Company;
 
 class OrderController extends Controller
 {
-    public function store_service(Request $request){
+    public function new_order(Request $request){
 
-        $service_id = $request->get('ser_id');
-        $cli_name = $request->get('name');
-        $phone = $request->get('phone');
-        $message =$request->get('message');
-        $email = $request->get('email');
-        $company = $request->get('company');
+        $service_id = $request->service;
+        $client_name = $request->name;
+        $email = $request->email;
+        $phone = $request->phone;
+        $date = $request->date;
+        $message =$request->message;
+
         $input  = [
             'service_id' => $service_id,
-            'cli_name' => $cli_name,
+            'client_name' => $client_name,
             'email' => $email,
-            'message' => $message,
             'phone' => $phone,
+            'date' => $date,
+            'message' => $message,
 
         ];
         $reglas = [
             'service_id'=> 'required',
-            //quantity especificar o no cantidad
-            'cli_name' => 'required|max:150',
+            'client_name' => 'required|max:150',
             'email' => 'email|max:80',
-            'message' => 'required|max:300',
             'phone' => 'required|digits_between:9,14',
+            'date' => 'date',
+            'message' => 'required|max:300',
         ];
-        $validacion = Validator::make($input, $reglas);
+
+        $validation = Validator::make($input, $reglas);
         
-        if ($validacion->fails()){
-            $response = ['status'=>'fail'];
+        if ($validation->fails()){
+            $response = ['status'=>'fail-validate', 'errors' => $validation->errors()];
         }else{
 
-            $data_company = Company::data_company();
-            $email_company = $data_company->email;
-            $email_company = 'jorgealvarobarreravasquez@gmail.com';
-            $search_service = Service::select('services.name as ser_nam')->from('services')
-            ->where('services.id',$service_id)->first();
+            //$data_company = Company::data_company();
+            //$email_company = $data_company->email;
+            $email_company = 'fearless347@gmail.com';
+            $search_service = Service::select('name')->where('id', $service_id)->first();
 
-            $service_name = $search_service->ser_nam;
+            $service_name = $search_service->name;
 
-            $client['name'] = $cli_name;
+            $client['name'] = $client_name;
             $client['email'] = $email;
             $client['phone'] = $phone;
-            $client['company'] = $company;
+            $client['date'] = $date;
             $client['msg'] = $message;
-            $product['name'] = $service_name;
-
+            $service['name'] = $service_name;
             
-                    try {
-                        DB::beginTransaction();
-                        $service['name'] = $service_name;
-                        $new_order = new Order();
-                        $new_order->service_id = $prod_id;
-                        $new_order->quantity = $quantity;
-                        $new_order->name = $cli_name;
-                        $new_order->phone = $phone;
-                        $new_order->email = $email;
-                        $new_order->company = $company;
-                        $new_order->save();
-                        //CONFIRMACIÓN AL CLIENTE
-                        $confirm_service = new EmailConfirmService($service);
-                        Mail::to($email)->send($confirm_service); 
-                        //ENVÍO A LA EMPRESA 
-                        $order_product = new EmailOrderService($client, $product);
-                        Mail::to($email_company)->send($order_product); 
-                        $response = ['status'=>'success'];
-                        DB::commit();
-                    }catch(\Exception $e) {
-                        DB::rollback();
-                        $response = ['status'=>'fail'];
-                    }
+            try {
+                DB::beginTransaction();
+                $service['name'] = $service_name;
+                $new_order = new Order();
+                $new_order->service_id = $service_id;
+                $new_order->name = $client_name;
+                $new_order->phone = $phone;
+                $new_order->email = $email;
+                $new_order->date = $date;
+                $new_order->message = $message;
+                $new_order->save();
+
+                //CONFIRMACIÓN AL CLIENTE
+                $confirm_service = new EmailConfirmService($service);
+                Mail::to($email)->send($confirm_service); 
+
+                //ENVÍO A LA EMPRESA 
+                $order_service = new EmailOrderService($client, $service);
+                Mail::to($email_company)->send($order_service);
+
+                $response = ['status'=>'success'];
+                
+                DB::commit();
+            }catch(\Exception $e) {
+                dd($e);
+                DB::rollback();
+                $response = ['status'=>'fail-send'];
+            }
         }
 
         return $response; 

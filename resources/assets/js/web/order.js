@@ -4,25 +4,27 @@ window.Vue = require('vue');
 
 const token = document.getElementById('my-token').getAttribute('content');
 
-const contact = new Vue({
-    el: '#contact',
+const order = new Vue({
+    el: '#order',
     data: {
+        service: document.getElementById('service_id').value,
         name: '',
         email: '',
         phone: '',
-        company: '',
+        date: new Date().toISOString().slice(0,10),
         message: ''
     },
     methods: {
-        sendContact: function() {
+        sendOrder: function() {
             let data = {
+                service: this.service,
                 name: this.name,
                 email: this.email,
                 phone: this.phone,
-                company: this.company,
+                date: this.date,
                 message: this.message
             }
-            fetch('/contact-web', {
+            fetch('/order-web', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
@@ -35,6 +37,7 @@ const contact = new Vue({
                 //console.log(response.status)
                 if (response.status == 'success') {
                     this.clearForm()
+                    this.alertSuccess()
                 } else if (response.status == 'fail-validate') {
                     //console.log(response.errors)
                     this.showErrors(response.errors)
@@ -49,8 +52,17 @@ const contact = new Vue({
             this.name = ''
             this.email = ''
             this.phone = ''
-            this.company = ''
+            this.date = new Date().toISOString().slice(0,10)
             this.message = ''
+        },
+        alertSuccess: function () {
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Hemos recibido tu pedido, pronto nos comunicaremos contigo',
+                showConfirmButton: false,
+                timer: 2000
+            })
         },
         showErrors: function (errors) {
             let html = '';

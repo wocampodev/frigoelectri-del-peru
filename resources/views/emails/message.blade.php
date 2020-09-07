@@ -2,11 +2,11 @@
     {{-- Header --}}
     @slot('header')
         @component('mail::header', ['url' => '#'])  
-            MCC REFRIGERACIÓN S.R.L
+            Frigo Electric del Perú E.I.R.L
         @endcomponent
     @endslot
     
-    ![MCC REFRIGERACIÓN S.R.L](https://mcc-refrigeracion.com/assets/img/mcc-refrigeracion-seo.png)
+    ![Frigo Electric del Perú E.I.R.L](https://mcc-refrigeracion.com/assets/img/mcc-refrigeracion-seo.png)
 
     {{-- Body --}}
     {{ $slot }}

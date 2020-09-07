@@ -28,5 +28,6 @@ Route::group([
     Route::get('search/service', 'ServiceController@search_service');
 
     Route::post('contact-web', 'SolicitudeController@new_contact');
+    Route::post('order-web', 'OrderController@new_order');
 
 });

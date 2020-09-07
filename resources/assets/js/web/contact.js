@@ -35,6 +35,7 @@ const contact = new Vue({
                 //console.log(response.status)
                 if (response.status == 'success') {
                     this.clearForm()
+                    this.alertSuccess()
                 } else if (response.status == 'fail-validate') {
                     //console.log(response.errors)
                     this.showErrors(response.errors)
@@ -51,6 +52,15 @@ const contact = new Vue({
             this.phone = ''
             this.company = ''
             this.message = ''
+        },
+        alertSuccess: function () {
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Excelente' + this.name + 'nos comunicaremos contigo',
+                showConfirmButton: false,
+                timer: 2000
+            })
         },
         showErrors: function (errors) {
             let html = '';
