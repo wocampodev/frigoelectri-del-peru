@@ -44831,6 +44831,8 @@ module.exports = __webpack_require__(47);
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
 __webpack_require__(9);
 
 window.Vue = __webpack_require__(33);
@@ -44848,6 +44850,8 @@ var contact = new Vue({
     },
     methods: {
         sendContact: function sendContact() {
+            var _this = this;
+
             var data = {
                 name: this.name,
                 email: this.email,
@@ -44865,8 +44869,75 @@ var contact = new Vue({
             }).then(function (res) {
                 return res.json();
             }).then(function (response) {
-                console.log(response.status);
-                console.log(response.errors);
+                //console.log(response.status)
+                if (response.status == 'success') {
+                    _this.clearForm();
+                } else if (response.status == 'fail-validate') {
+                    //console.log(response.errors)
+                    _this.showErrors(response.errors);
+                } else if (response.status == 'fail-send') {
+                    //console.log('No se envió el correo')
+                    _this.alertFail();
+                }
+            }).catch(function (errors) {
+                return console.log(errors);
+            });
+        },
+        clearForm: function clearForm() {
+            this.name = '';
+            this.email = '';
+            this.phone = '';
+            this.company = '';
+            this.message = '';
+        },
+        showErrors: function showErrors(errors) {
+            var html = '';
+            var _iteratorNormalCompletion = true;
+            var _didIteratorError = false;
+            var _iteratorError = undefined;
+
+            try {
+                for (var _iterator = Object.entries(errors)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                    var _ref = _step.value;
+
+                    var _ref2 = _slicedToArray(_ref, 2);
+
+                    var key = _ref2[0];
+                    var value = _ref2[1];
+
+                    html += value[0] + '<br>';
+                }
+            } catch (err) {
+                _didIteratorError = true;
+                _iteratorError = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion && _iterator.return) {
+                        _iterator.return();
+                    }
+                } finally {
+                    if (_didIteratorError) {
+                        throw _iteratorError;
+                    }
+                }
+            }
+
+            this.showErrorsAlert(html);
+        },
+        showErrorsAlert: function showErrorsAlert(content) {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                html: content,
+                showConfirmButton: false,
+                timer: 5000
+            });
+        },
+        alertFail: function alertFail() {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Ha ocurrido un problema, intentelo más tarde.'
             });
         }
     }

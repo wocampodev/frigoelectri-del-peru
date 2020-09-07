@@ -39,41 +39,41 @@ class SolicitudeController extends Controller
         if ($validation->fails()){
             $response = ['status'=>'fail-validate', 'errors' => $validation->errors()];
             return $response;
-        }
+        } else {
+            //$data_company = Company::data_company();
+            //$email_company = $data_company->email;
+            $email_company = 'fearless347@gmail.com';
 
-        //$data_company = Company::data_company();
-        //$email_company = $data_company->email;
-        $email_company = 'fearless347@gmail.com';
+            $client['name'] = $name;
+            $client['email'] = $email;
+            $client['phone'] = $phone;
+            $client['company'] = $company;
+            $client['description'] = $message;
 
-        $client['name'] = $name;
-        $client['email'] = $email;
-        $client['phone'] = $phone;
-        $client['company'] = $company;
-        $client['description'] = $message;
+            try {
+                DB::beginTransaction(); 
+                $new_solicitude = new Solicitude();
+                $new_solicitude->name = $name;
+                $new_solicitude->email = $email;
+                $new_solicitude->message = $message;
+                $new_solicitude->phone = $phone;
+                $new_solicitude->save();
 
-        try {
-            DB::beginTransaction(); 
-            $new_solicitude = new Solicitude();
-            $new_solicitude->name = $name;
-            $new_solicitude->email = $email;
-            $new_solicitude->message = $message;
-            $new_solicitude->phone = $phone;
-            $new_solicitude->save();
-
-            $details = ['name'=>$name,'email'=>$email,'msg'=>$message,'phone'=>$phone];
-            $confirm_solicitude = new EmailQueryCompany($client);
+                $details = ['name'=>$name,'email'=>$email,'msg'=>$message,'phone'=>$phone];
+                $confirm_solicitude = new EmailQueryCompany($client);
                 Mail::to($email_company)->send($confirm_solicitude); 
-                
-            $confirm_client = new EmailQueryClient($client);
+                    
+                $confirm_client = new EmailQueryClient($client);
                 Mail::to($email)->send($confirm_client); 
-            $response = ['status'=>'success'];
-            DB::commit();
-        }catch(\Exception $e) {
-            dd($e);
-            DB::rollback();
-            $response = ['status'=>'fail-send'];
+                $response = ['status'=>'success'];
+                
+                DB::commit();
+            }catch(\Exception $e) {
+                //dd($e);
+                DB::rollback();
+                $response = ['status'=>'fail-send'];
+            }
+            return $response;
         }
-        
-        return $response;
     }
 }
