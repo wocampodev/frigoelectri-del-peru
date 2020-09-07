@@ -19,11 +19,14 @@ Route::group([
 
     Route::get('/', 'WebController@show_view_home')->name('home');
     Route::get('/nosotros', 'WebController@show_view_about')->name('about');
+
     Route::get('/contacto', 'WebController@show_view_contact')->name('contact');
 
     Route::resource('servicios', 'ServiceController', ['only' => ['index']]);
     Route::get('all-services', 'ServiceController@show_all_services');
     Route::get('servicios/{slug}', 'ServiceController@show_service');
     Route::get('search/service', 'ServiceController@search_service');
+
+    Route::post('contact-web', 'SolicitudeController@new_contact');
 
 });

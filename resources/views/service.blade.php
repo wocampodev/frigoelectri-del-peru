@@ -73,6 +73,6 @@
 
 @section('scripts')
     
-    {{-- <script src="{{ asset('js/service.js') }}"></script> --}}
+    {{-- <script src="{{ asset('js/web/service.js') }}"></script> --}}
 
 @endsection

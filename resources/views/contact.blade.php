@@ -45,43 +45,43 @@
                 </div>
                 <div class="row no-gutters shadow">
                     <div class="col-md-7">
-                        <div class="contact-wrap w-100 p-md-5 p-4">
+                        <div class="contact-wrap w-100 p-md-5 p-4" id="contact">
                             <h3 class="mb-4">Contáctanos</h3>
-                            <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                            <form class="contactForm">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="label" for="name">Apellidos y Nombres:</label>
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Escribe aquí...">
+                                            <input type="text" class="form-control" v-model="name" placeholder="Escribe aquí...">
                                         </div>
                                     </div>
                                     <div class="col-md-6"> 
                                         <div class="form-group">
                                             <label class="label" for="email">Correo electrónico:</label>
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Escribe aquí...">
+                                            <input type="email" class="form-control" v-model="email" placeholder="Escribe aquí...">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="label" for="phone">Celular:</label>
-                                            <input type="number" class="form-control" name="phone" id="phone" placeholder="Escribe aquí...">
+                                            <input type="number" class="form-control" v-model="phone" placeholder="Escribe aquí...">
                                         </div>
                                     </div>
                                     <div class="col-md-6"> 
                                         <div class="form-group">
-                                            <label class="label" for="ruc">RUC (Opcional):</label>
-                                            <input type="number" class="form-control" name="ruc" id="ruc" placeholder="Escribe aquí...">
+                                            <label class="label" for="ruc">Empresa:</label>
+                                            <input type="text" class="form-control" v-model="company" placeholder="Escribe aquí...">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="label" for="message">Mensaje</label>
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Escribe aquí..."></textarea>
+                                            <textarea class="form-control" cols="30" rows="4" v-model="message" placeholder="Escribe aquí..."></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="submit" value="Enviar mensaje" class="btn btn-primary">
+                                            <input type="submit" value="Enviar mensaje" @click.prevent="sendContact" class="btn btn-primary">
                                             <div class="submitting"></div>
                                         </div>
                                     </div>
@@ -96,5 +96,11 @@
             </div>
         </div>
     </section>
+
+@endsection
+
+@section('scripts')
+    
+    <script src="js/web/contact.js"></script>
 
 @endsection
