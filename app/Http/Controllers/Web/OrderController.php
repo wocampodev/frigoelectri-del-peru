@@ -10,6 +10,7 @@ use Mail, Validator,DB;
 use App\Mail\EmailConfirmService;
 use App\Service;
 use App\Company;
+use Carbon\Carbon;
 
 class OrderController extends Controller
 {
@@ -59,6 +60,12 @@ class OrderController extends Controller
             $client['date'] = $date;
             $client['msg'] = $message;
             $service['name'] = $service_name;
+            
+            $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+            $fecha = Carbon::parse($client['date']);
+            $mes = $meses[($fecha->format('n')) - 1];
+            $client['date'] = $fecha->format('d') . ' de ' . $mes . ' de ' . $fecha->format('Y');
+            
             
             try {
                 DB::beginTransaction();

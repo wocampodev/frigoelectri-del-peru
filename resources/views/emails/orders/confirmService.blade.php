@@ -3,7 +3,7 @@
 
 Su pedido: 
 
-* {{ $service['name'] }} 
+* {{ $service['name'] }}
 
 fue solicitado y enviado con éxito, pronto le daremos una respuesta. Gracias.
 

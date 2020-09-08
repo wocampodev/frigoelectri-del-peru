@@ -152,10 +152,10 @@ return [
         'phone' => 'celular',
         'email' => 'correo',
         'business' => 'empresa',
-        'message' => 'mensaje'
+        'message' => 'mensaje',
 
         //Servicios
-        
+        'date' => 'fecha'
     ],
 
 ];
