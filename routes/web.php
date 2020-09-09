@@ -12,9 +12,7 @@
 */
 
 Route::group([
-    
     'namespace' => 'Web',
-
 ], function(){
 
     Route::get('/', 'WebController@show_view_home')->name('home');
