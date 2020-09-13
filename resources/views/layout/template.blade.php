@@ -45,7 +45,7 @@
 
         <script src="{{ asset('vendor/js/jquery.min.js') }}"></script>
         <script src="{{ asset('vendor/js/jquery-migrate-3.0.1.min.js') }}"></script>
-        <script src="{{ asset('vendor/js/popper.min.js') }}"></script>
+        {{-- <script src="{{ asset('vendor/js/popper.min.js') }}"></script> --}}
         <script src="{{ asset('vendor/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('vendor/js/jquery.easing.1.3.js') }}"></script>
         <script src="{{ asset('vendor/js/jquery.waypoints.min.js') }}"></script>
