@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row d-flex no-gutters">
             <div class="col-md-5 d-flex section-summary-img">
-                <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url({{ asset('assets/images/about-1.jpg') }});"></div>
+                <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url({{ asset('assets/images/about-2.jpg') }});"></div>
             </div>
             <div class="col-md-7 pl-md-5 py-md-5">
                 <div class="heading-section pt-md-5">

@@ -7,7 +7,7 @@
 
         <div class="carousel__list">
             <div class="carousel__element">
-                <div class="hero-wrap" style="background-image: url('{{ asset('assets/images/bg_1.jpg') }}');" data-stellar-background-ratio="0.5">
+                <div class="hero-wrap" style="background-image: url('{{ asset('assets/images/slider-5.png') }}');" data-stellar-background-ratio="0.5">
                     <div class="overlay"></div>
                     <div class="container">
                         <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="carousel__element">
-                <div class="hero-wrap" style="background-image: url('{{ asset('assets/images/bg_2.jpg') }}');" data-stellar-background-ratio="0.5">
+                <div class="hero-wrap" style="background-image: url('{{ asset('assets/images/slider-6.png') }}');" data-stellar-background-ratio="0.5">
                     <div class="overlay"></div>
                     <div class="container">
                         <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="carousel__element">
-                <div class="hero-wrap" style="background-image: url('{{ asset('assets/images/bg_3.jpg') }}');" data-stellar-background-ratio="0.5">
+                <div class="hero-wrap" style="background-image: url('{{ asset('assets/images/slider-3.png') }}');" data-stellar-background-ratio="0.5">
                     <div class="overlay"></div>
                     <div class="container">
                         <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">

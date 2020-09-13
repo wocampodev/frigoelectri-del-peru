@@ -1,4 +1,4 @@
-<section class="ftco-section ftco-intro" style="background-image: url({{ asset('assets/images/bg_2.jpg') }});">
+<section class="ftco-section ftco-intro" style="background-image: url({{ asset('assets/images/bg-inicioservicios.jpg') }});">
     <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
             <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
