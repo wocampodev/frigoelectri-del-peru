@@ -79,10 +79,10 @@
 	/* opacity: 20%; */
 }
 
-.carousel__previous:hover,
+/* .carousel__previous:hover,
 .carousel__next:hover {
-	/* opacity: 100%; */
-}
+	opacity: 100%;
+} */
 
 .carousel__previous {
 	left: -30px;

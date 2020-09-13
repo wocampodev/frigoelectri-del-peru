@@ -1,8 +1,8 @@
 <div class="carousel">
     <div class="carousel__container">
+
         <button aria-label="Anterior" class="carousel__previous">
-            <i class="flaticon-confetti"></i>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <i class=""></i>
         </button>
 
         <div class="carousel__list">
@@ -48,8 +48,9 @@
         </div>
 
         <button aria-label="Siguiente" class="carousel__next">
-            <i class="glyphicon glyphicon-chevron-right"></i>
+            <i class=""></i>
         </button>
+
     </div>
     <div role="tablist" class="carousel__indicators my-3"></div>
 </div>
