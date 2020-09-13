@@ -90,7 +90,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 d-flex align-items-stretch">
-                        <div class="info-wrap w-100 p-5 img" style="background-image: url({{ asset('assets/images/about-1.jpg') }});"></div>
+                        <div class="info-wrap w-100 p-5 img" style="background-image: url({{ asset('assets/images/about-2.jpg') }});"></div>
                     </div>
                 </div>
             </div>
