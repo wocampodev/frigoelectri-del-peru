@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-09-2020 a las 18:42:04
+-- Tiempo de generación: 13-09-2020 a las 20:14:14
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -24,16 +24,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `brands`
+-- Estructura de tabla para la tabla `clients`
 --
 
-CREATE TABLE `brands` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `img` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+CREATE TABLE `clients` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `clients`
+--
+
+INSERT INTO `clients` (`id`, `name`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'AGROAURORA', 'agroaurora.jpg', NULL, NULL),
+(2, 'AGROLATAM', 'agrolatam.jpg', NULL, NULL),
+(3, 'AGROLMOS', 'agrolmos.jpg', NULL, NULL),
+(4, 'BODYTECH', 'bodytech.jpg', NULL, NULL),
+(5, 'OSORIA SMILE', 'osoria.jpg', NULL, NULL),
+(6, 'AGRICOLA PAMPABAJA S.A.C', 'pampabaja.jpg', NULL, NULL),
+(7, 'BETA - COMPLEJO AGROINDUSTRIAL', 'beta.jpg', NULL, NULL),
+(8, 'VITALINE', 'vitaline.jpg', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -67,10 +81,10 @@ CREATE TABLE `migrations` (
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2020_09_03_125809_create_companies_table', 1),
-(2, '2020_09_03_125949_create_brands_table', 1),
-(3, '2020_09_03_173610_create_services_table', 1),
-(4, '2020_09_03_174036_create_orders_table', 1),
-(5, '2020_09_03_174609_create_solicitudes_table', 1);
+(2, '2020_09_03_173610_create_services_table', 1),
+(3, '2020_09_03_174036_create_orders_table', 1),
+(4, '2020_09_03_174609_create_solicitudes_table', 1),
+(5, '2020_09_13_165635_create_clients_table', 1);
 
 -- --------------------------------------------------------
 
@@ -89,14 +103,6 @@ CREATE TABLE `orders` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `password_resets`
---
--- Error leyendo la estructura de la tabla frigo_electri.password_resets: #1146 - Tabla 'frigo_electri.password_resets' no existe
--- Error leyendo datos de la tabla frigo_electri.password_resets: #1064 - Algo está equivocado en su sintax cerca 'FROM `frigo_electri`.`password_resets`' en la linea 1
 
 -- --------------------------------------------------------
 
@@ -120,23 +126,24 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `name`, `slug`, `short_description`, `long_description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Instalaciones de gases', 'instalaciones-de-gases', 'Instalación de sistemas de gases medicinales, oxigeno, vacío, oxido nitroso, aire medicinal', NULL, NULL, NULL, NULL),
-(2, 'Aire acondicionado', 'aire-acondicionado', 'Aire acondicionado automotriz, industrial y residencial', NULL, NULL, NULL, NULL),
-(3, 'Reparaciones y mantenimiento', 'reparaciones-y-mantenimiento', 'Reparación, mantenimiento y proyecto de subestaciones eléctricas. Reparación de máquinas de calor', NULL, NULL, NULL, NULL),
-(4, 'Proyectos eléctricos', 'proyectos-electricos', 'Proyectos eléctricos, climatización extracción y obras eléctricas', NULL, NULL, NULL, NULL),
-(5, 'Soldadura', 'soldadura', 'Soldadura eléctrica, autógena, tig, soldadura en aluminio', NULL, NULL, NULL, NULL),
-(6, 'Electicidad', 'electricidad', 'Electricidad industrial, electricidad media y baja tensión, instalaciones eléctricas', NULL, NULL, NULL, NULL),
-(7, 'Transformadores', 'transformadores', 'Instalación de trasformadores, transformix seccionadores', NULL, NULL, NULL, NULL),
-(8, 'Refrigeración', 'refrigeracion', 'Refrigeración comercial e industrial', NULL, NULL, NULL, NULL),
-(9, 'Tableros eléctricos y de transferencia', 'tableros-electricos-y-de-transferencia', 'Elaboración de tableros eléctricos y de transferencia', NULL, NULL, NULL, NULL),
-(10, 'Rebobinados de motores', 'rebobinados-de-motores', 'Rebobinados de motores eléctricos, generadores', NULL, NULL, NULL, NULL),
-(11, 'Calderos y autoclaves de vapor', 'calderos-y-autoclaves-de-valor', 'Calderos de vapor. Autoclaves de vapor. Marmitas. Tavolas caldas', NULL, NULL, NULL, NULL),
-(12, 'Instalación de plantas de tratamiento de agua', 'instalacion-de-plantas-de-tratamiento-de-agua', 'Instalación de plantas de tratamiento de agua residuales, agua de mesa, ablandadores de agua', NULL, NULL, NULL, NULL),
-(13, 'Venta de osmosis inversa', 'venta-de-osmosis-inversa', 'Venta de osmosis inversa. Torres de enfriamiento', NULL, NULL, NULL, NULL),
-(14, 'Instalaciones de puestas a tierra', 'instalaciones-de-puestas-a-tierras', 'Instalación de puestas a tierra, mayas, parrarayos', NULL, NULL, NULL, NULL),
-(15, 'Automatización de plantas', 'automatizacion-de-plantas', 'Automatización de plantas, instalación de variadores de frecuencia, PLC Y sensores', NULL, NULL, NULL, NULL),
-(16, 'Venta de motores', 'venta-de-motores', 'Venta de motores eléctricos, electrobombas, rodamientos, paneles, refrigerantes', NULL, NULL, NULL, NULL),
-(17, 'Conductores y Compresores', 'conductores-y-compresores', 'Aires acondicionados, extractores de aire. Conductores eléctricos, llaves térmicas, variadores de frecuencia, interruptores térmicos, contactares. Compresores', NULL, NULL, NULL, NULL);
+(1, 'Instalaciones de gases', 'instalaciones-de-gases', 'Instalación de sistemas de gases medicinales, oxigeno, vacío, oxido nitroso, aire medicinal', NULL, 'instalacion-gas-medicinal.jpeg', NULL, NULL),
+(2, 'Aire acondicionado', 'aire-acondicionado', 'Aire acondicionado industrial y residencial', NULL, 'mantenimieno-aire-acondicionado.jpeg', NULL, NULL),
+(3, 'Aire acondicionado automotriz', 'aire-acondicionado-automotriz', 'Aire acondicionado automotriz', NULL, 'aire-acondicionado-automotriz.jpeg', NULL, NULL),
+(4, 'Reparaciones y mantenimiento', 'reparaciones-y-mantenimiento', 'Reparación, mantenimiento y proyecto de subestaciones eléctricas. Reparación de máquinas de calor', NULL, 'reparacion-aire.jgeg', NULL, NULL),
+(5, 'Proyectos eléctricos', 'proyectos-electricos', 'Proyectos eléctricos, climatización extracción y obras eléctricas', NULL, NULL, NULL, NULL),
+(6, 'Soldadura', 'soldadura', 'Soldadura eléctrica, autógena, tig, soldadura en aluminio', NULL, NULL, NULL, NULL),
+(7, 'Electicidad', 'electricidad', 'Electricidad industrial, electricidad media y baja tensión, instalaciones eléctricas', NULL, NULL, NULL, NULL),
+(8, 'Transformadores', 'transformadores', 'Instalación de trasformadores, transformix seccionadores', NULL, NULL, NULL, NULL),
+(9, 'Refrigeración', 'refrigeracion', 'Refrigeración comercial e industrial', NULL, NULL, NULL, NULL),
+(10, 'Tableros eléctricos y de transferencia', 'tableros-electricos-y-de-transferencia', 'Elaboración de tableros eléctricos y de transferencia', NULL, 'tablero-transferencia.jpg', NULL, NULL),
+(11, 'Rebobinados de motores', 'rebobinados-de-motores', 'Rebobinados de motores eléctricos, generadores', NULL, NULL, NULL, NULL),
+(12, 'Calderos y autoclaves de vapor', 'calderos-y-autoclaves-de-valor', 'Calderos de vapor. Autoclaves de vapor. Marmitas. Tavolas caldas', NULL, NULL, NULL, NULL),
+(13, 'Instalación de plantas de tratamiento de agua', 'instalacion-de-plantas-de-tratamiento-de-agua', 'Instalación de plantas de tratamiento de agua residuales, agua de mesa, ablandadores de agua', NULL, NULL, NULL, NULL),
+(14, 'Venta de osmosis inversa', 'venta-de-osmosis-inversa', 'Venta de osmosis inversa. Torres de enfriamiento', NULL, NULL, NULL, NULL),
+(15, 'Instalaciones de puestas a tierra', 'instalaciones-de-puestas-a-tierras', 'Instalación de puestas a tierra, mayas, parrarayos', NULL, 'puesta-a-tierra.jpeg', NULL, NULL),
+(16, 'Automatización de plantas', 'automatizacion-de-plantas', 'Automatización de plantas, instalación de variadores de frecuencia, PLC Y sensores', NULL, NULL, NULL, NULL),
+(17, 'Venta de motores', 'venta-de-motores', 'Venta de motores eléctricos, electrobombas, rodamientos, paneles, refrigerantes', NULL, NULL, NULL, NULL),
+(18, 'Conductores y Compresores', 'conductores-y-compresores', 'Aires acondicionados, extractores de aire. Conductores eléctricos, llaves térmicas, variadores de frecuencia, interruptores térmicos, contactares. Compresores', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -155,22 +162,14 @@ CREATE TABLE `solicitudes` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `users`
---
--- Error leyendo la estructura de la tabla frigo_electri.users: #1146 - Tabla 'frigo_electri.users' no existe
--- Error leyendo datos de la tabla frigo_electri.users: #1064 - Algo está equivocado en su sintax cerca 'FROM `frigo_electri`.`users`' en la linea 1
-
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `brands`
+-- Indices de la tabla `clients`
 --
-ALTER TABLE `brands`
+ALTER TABLE `clients`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -209,10 +208,10 @@ ALTER TABLE `solicitudes`
 --
 
 --
--- AUTO_INCREMENT de la tabla `brands`
+-- AUTO_INCREMENT de la tabla `clients`
 --
-ALTER TABLE `brands`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+ALTER TABLE `clients`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `companies`
@@ -236,7 +235,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT de la tabla `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `solicitudes`
