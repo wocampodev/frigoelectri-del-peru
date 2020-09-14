@@ -15,14 +15,14 @@ class ServiceController extends Controller
             'greeting' => 'Nuestros Servicios'
         ];
 
-        $services = Service::select('slug', 'name', 'short_description')->paginate(6);
+        $services = Service::select('slug', 'name', 'short_description', 'image')->paginate(6);
         
         return view('service', compact('messages', 'services'));
     }
 
     public function show_all_services(Request $request)
     {
-        $services = Service::select('slug', 'name', 'short_description')/* ->orderBy('id', 'DESC') */->paginate(6);
+        $services = Service::select('slug', 'name', 'short_description', 'image')/* ->orderBy('id', 'DESC') */->paginate(6);
 
         //$all = Service::select('*')->get();
 

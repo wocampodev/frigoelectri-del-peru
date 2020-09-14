@@ -7,16 +7,16 @@
     <section class="ftco-section bg-light">
         <div class="container" id="service">
             <div class="row d-flex">
-                @foreach($services as $service)
+                @foreach($services as $item)
                     <div class="col-md-4 d-flex ftco-animate">
                         <div style="width: 100%">
                             <div class="blog-entry align-self-stretch">
-                                <a href="/servicios/{{ $service->slug }}" class="block-20 rounded" style="background-image: url('/assets/images/gallery-5.jpg')"></a>
+                                <a href="/servicios/{{ $item->slug }}" class="block-20 rounded" style="background-image: url('/assets/images/services/{{ $item->image }}')"></a>
                                 <div class="text p-4">
-                                    <div class="meta mb-2">
+                                    {{-- <div class="meta mb-2">
                                         <div>{{ $service->name }}</div>
-                                    </div>
-                                    <h3 class="heading">{{ $service->name }}</h3>
+                                    </div> --}}
+                                    <h3 class="heading"><a href="/servicios/{{ $item->slug }}">{{ $item->name }}</a></h3>
                                 </div>
                             </div>
                         </div> 
