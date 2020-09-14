@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-09-2020 a las 20:14:14
+-- Tiempo de generación: 14-09-2020 a las 05:10:37
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -127,23 +127,18 @@ CREATE TABLE `services` (
 
 INSERT INTO `services` (`id`, `name`, `slug`, `short_description`, `long_description`, `image`, `created_at`, `updated_at`) VALUES
 (1, 'Instalaciones de gases', 'instalaciones-de-gases', 'Instalación de sistemas de gases medicinales, oxigeno, vacío, oxido nitroso, aire medicinal', NULL, 'instalacion-gas-medicinal.jpeg', NULL, NULL),
-(2, 'Aire acondicionado', 'aire-acondicionado', 'Aire acondicionado industrial y residencial', NULL, 'mantenimieno-aire-acondicionado.jpeg', NULL, NULL),
-(3, 'Aire acondicionado automotriz', 'aire-acondicionado-automotriz', 'Aire acondicionado automotriz', NULL, 'aire-acondicionado-automotriz.jpeg', NULL, NULL),
-(4, 'Reparaciones y mantenimiento', 'reparaciones-y-mantenimiento', 'Reparación, mantenimiento y proyecto de subestaciones eléctricas. Reparación de máquinas de calor', NULL, 'reparacion-aire.jgeg', NULL, NULL),
-(5, 'Proyectos eléctricos', 'proyectos-electricos', 'Proyectos eléctricos, climatización extracción y obras eléctricas', NULL, NULL, NULL, NULL),
-(6, 'Soldadura', 'soldadura', 'Soldadura eléctrica, autógena, tig, soldadura en aluminio', NULL, NULL, NULL, NULL),
-(7, 'Electicidad', 'electricidad', 'Electricidad industrial, electricidad media y baja tensión, instalaciones eléctricas', NULL, NULL, NULL, NULL),
-(8, 'Transformadores', 'transformadores', 'Instalación de trasformadores, transformix seccionadores', NULL, NULL, NULL, NULL),
-(9, 'Refrigeración', 'refrigeracion', 'Refrigeración comercial e industrial', NULL, NULL, NULL, NULL),
-(10, 'Tableros eléctricos y de transferencia', 'tableros-electricos-y-de-transferencia', 'Elaboración de tableros eléctricos y de transferencia', NULL, 'tablero-transferencia.jpg', NULL, NULL),
-(11, 'Rebobinados de motores', 'rebobinados-de-motores', 'Rebobinados de motores eléctricos, generadores', NULL, NULL, NULL, NULL),
-(12, 'Calderos y autoclaves de vapor', 'calderos-y-autoclaves-de-valor', 'Calderos de vapor. Autoclaves de vapor. Marmitas. Tavolas caldas', NULL, NULL, NULL, NULL),
-(13, 'Instalación de plantas de tratamiento de agua', 'instalacion-de-plantas-de-tratamiento-de-agua', 'Instalación de plantas de tratamiento de agua residuales, agua de mesa, ablandadores de agua', NULL, NULL, NULL, NULL),
-(14, 'Venta de osmosis inversa', 'venta-de-osmosis-inversa', 'Venta de osmosis inversa. Torres de enfriamiento', NULL, NULL, NULL, NULL),
-(15, 'Instalaciones de puestas a tierra', 'instalaciones-de-puestas-a-tierras', 'Instalación de puestas a tierra, mayas, parrarayos', NULL, 'puesta-a-tierra.jpeg', NULL, NULL),
-(16, 'Automatización de plantas', 'automatizacion-de-plantas', 'Automatización de plantas, instalación de variadores de frecuencia, PLC Y sensores', NULL, NULL, NULL, NULL),
-(17, 'Venta de motores', 'venta-de-motores', 'Venta de motores eléctricos, electrobombas, rodamientos, paneles, refrigerantes', NULL, NULL, NULL, NULL),
-(18, 'Conductores y Compresores', 'conductores-y-compresores', 'Aires acondicionados, extractores de aire. Conductores eléctricos, llaves térmicas, variadores de frecuencia, interruptores térmicos, contactares. Compresores', NULL, NULL, NULL, NULL);
+(2, 'Aire acondicionado', 'aire-acondicionado', 'Aire acondicionado industrial y residencial', NULL, 'mantenimiento-aire-acondicionado.jpg', NULL, NULL),
+(3, 'Ventilación interna', 'ventilacion', 'Ventilación para oficinas', NULL, 'ventilacion.jpeg', NULL, NULL),
+(4, 'Aire acondicionado automotriz', 'aire-acondicionado-automotriz', 'Instalación y mantenimiento de aire acondicionado automotriz', NULL, 'aire-acondicionado-automotriz.jpeg', NULL, NULL),
+(5, 'Secadores', 'secadores', 'Instalación y mantenimiento de secadores', NULL, 'mantenimiento-secadores.jpg', NULL, NULL),
+(6, 'Reparaciones y mantenimiento', 'reparaciones-y-mantenimiento', 'Reparación, mantenimiento y proyecto de subestaciones eléctricas. Reparación de máquinas de calor', NULL, 'reparacion-aire.jpeg', NULL, NULL),
+(7, 'Electicidad de baja tensión', 'electricidad-baja-tension', 'Instalaciones y mantenimiento de electricidad de baja tensión', NULL, 'proyecto-baja-media-tension.jpg', NULL, NULL),
+(8, 'Electicidad de media tensión', 'electricidad-media-tension', 'Instalaciones y mantenimiento de electricidad de media tensión', NULL, 'proyecto-media-tension.jpg', NULL, NULL),
+(9, 'Fabricación de tableros', 'fabricacion-de-tableros', 'Elaboración de tableros eléctricos y de transferencia', NULL, 'fabricacion-tableros.jpeg', NULL, NULL),
+(10, 'Tableros eléctricos y de transferencia', 'tableros-electricos-y-de-transferencia', 'Reparación y mantenimiento de tableros eléctricos y de transferencia', NULL, 'tablero-transferencia.jpg', NULL, NULL),
+(11, 'Refrigeración', 'refrigeracion', 'Refrigeración comercial e industrial', NULL, 'refrigeracion.jpg', NULL, NULL),
+(12, 'Mantenimiento e instalaciones eléctricas', 'mantenimiento-instalaciones-electricas', 'Mantenimiento e instalaciones eléctricas', NULL, 'mantenimiento-tableros.jpg', NULL, NULL),
+(13, 'Instalaciones de puestas a tierra', 'instalaciones-de-puestas-a-tierras', 'Instalación de puestas a tierra, mayas, parrarayos', NULL, 'puesta-a-tierra.jpeg', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -235,7 +230,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT de la tabla `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `solicitudes`
