@@ -12,29 +12,29 @@
                     <div class="col-sm-12 col-lg-6 services-2 w-100 d-flex">
                         <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-confetti"></span></div>
                         <div class="text pl-3">
-                            <h4>4 años de servicio</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat beatae voluptas, eveniet.</p>
+                            <h4>Experiencia</h4>
+                            <p>Nuestros años de trabajo nos permiten ofrecer un servicio de calidad</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-6 services-2 w-100 d-flex">
                         <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-consult"></span></div>
                         <div class="text pl-3">
                             <h4>Equipo profesional &amp; experimentado</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat beatae voluptas, eveniet.</p>
+                            <p>Equipo capacitado y con amplia experiencia en el sector</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-6 services-2 w-100 d-flex">
                         <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-winner"></span></div>
                         <div class="text pl-3">
                             <h4>Servicio confiable &amp; de alta calidad</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat beatae voluptas, eveniet.</p>
+                            <p>El 100% de nuestros clientes respaldan nuestra calidad en el trabajo </p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-6 services-2 w-100 d-flex">
                         <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-technical"></span></div>
                         <div class="text pl-3">
-                            <h4>Servicio al cliente &amp; asesoramiento de expertos</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat beatae voluptas, eveniet.</p>
+                            <h4>Compromiso y eficiencia</h4>
+                            <p>Estamos comprometidos con nuestro trabajo y con nuestros clientes</p>
                         </div>
                     </div>
                 </div>
