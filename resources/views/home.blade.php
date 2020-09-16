@@ -14,8 +14,8 @@
 
 @endsection
 
-@section('scripts')
+{{-- @section('scripts')
     
     <script src="js/web/home.js"></script>
 
-@endsection
+@endsection --}}

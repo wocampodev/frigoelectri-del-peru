@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-md-7 heading-section text-center ftco-animate">
-                <h2>Nuestro Trabajo</h2>
+                <h2>Ellos confían en nosotros</h2>
             </div>
         </div>
         <div class="row tabulation mt-4 ftco-animate">
@@ -19,7 +19,11 @@
                 <div class="tab-content">
                     @foreach ($clients as $item)
                         <div class="tab-pane container p-0 @if ($item->id == 1) active @endif" id="client-{{ $item->id }}">
-                            <div class="img" style="background-image: url('assets/images/clients/{{ $item->image }}');"></div>
+                            <div class="img img-fluid" 
+                                style="background-image: url('assets/images/clients/{{ $item->image }}'); 
+                                background-size: 66% 66%;
+                                background-repeat: no-repeat;
+                                background-position: center center;"></div>
                             <h3><a href="#">{{ $item->name }}</a></h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, doloribus!. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea consequuntur molestias, earum at magni esse?</p>
                         </div>
