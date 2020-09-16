@@ -16,7 +16,7 @@
                                     {{-- <div class="meta mb-2">
                                         <div>{{ $service->name }}</div>
                                     </div> --}}
-                                    <h3 class="heading"><a href="/servicios/{{ $item->slug }}">{{ $item->name }}</a></h3>
+                                    <h3 class="heading text-uppercase font-weight-bold text-center mb-0" style="font-size: 14px;"><a href="/servicios/{{ $item->slug }}">{{ $item->name }}</a></h3>
                                 </div>
                             </div>
                         </div> 

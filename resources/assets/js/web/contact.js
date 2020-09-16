@@ -75,7 +75,7 @@ const contact = new Vue({
                 icon: 'error',
                 html: content,
                 showConfirmButton: false,
-                timer: 5000
+                timer: 3000
             });
         },
         alertFail: function () {
