@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-09-2020 a las 05:10:37
+-- Tiempo de generación: 17-09-2020 a las 00:21:21
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -126,19 +126,19 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `name`, `slug`, `short_description`, `long_description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Instalaciones de gases', 'instalaciones-de-gases', 'Instalación de sistemas de gases medicinales, oxigeno, vacío, oxido nitroso, aire medicinal', NULL, 'instalacion-gas-medicinal.jpeg', NULL, NULL),
-(2, 'Aire acondicionado', 'aire-acondicionado', 'Aire acondicionado industrial y residencial', NULL, 'mantenimiento-aire-acondicionado.jpg', NULL, NULL),
-(3, 'Ventilación interna', 'ventilacion', 'Ventilación para oficinas', NULL, 'ventilacion.jpeg', NULL, NULL),
-(4, 'Aire acondicionado automotriz', 'aire-acondicionado-automotriz', 'Instalación y mantenimiento de aire acondicionado automotriz', NULL, 'aire-acondicionado-automotriz.jpeg', NULL, NULL),
-(5, 'Secadores', 'secadores', 'Instalación y mantenimiento de secadores', NULL, 'mantenimiento-secadores.jpg', NULL, NULL),
-(6, 'Reparaciones y mantenimiento', 'reparaciones-y-mantenimiento', 'Reparación, mantenimiento y proyecto de subestaciones eléctricas. Reparación de máquinas de calor', NULL, 'reparacion-aire.jpeg', NULL, NULL),
-(7, 'Electicidad de baja tensión', 'electricidad-baja-tension', 'Instalaciones y mantenimiento de electricidad de baja tensión', NULL, 'proyecto-baja-media-tension.jpg', NULL, NULL),
-(8, 'Electicidad de media tensión', 'electricidad-media-tension', 'Instalaciones y mantenimiento de electricidad de media tensión', NULL, 'proyecto-media-tension.jpg', NULL, NULL),
+(1, 'Instalaciones de Gases', 'instalaciones-de-gases', 'Nuestro servicio de instalación de gases cumple con los protocolos de seguridad de acuerdo a la necesidad de tu organización.', NULL, 'instalacion-gas-medicinal.jpeg', NULL, NULL),
+(2, 'Aire Acondicionado', 'aire-acondicionado', 'Instalación, limpieza y mantenimiento de aire acondicionado.', NULL, 'mantenimiento-aire-acondicionado.jpg', NULL, NULL),
+(3, 'Ventilación Interna', 'ventilacion', 'Instalación, mantenimiento, reparación y puesta en marcha de la ventilación que tu empresa u oficina necesita.', NULL, 'ventilacion.jpeg', NULL, NULL),
+(4, 'Aire Acondicionado Automotriz', 'aire-acondicionado-automotriz', 'Reparación y mantenimiento de aire acondicionado automotriz.', NULL, 'aire-acondicionado-automotriz.jpeg', NULL, NULL),
+(5, 'Secadores', 'secadores', 'Instalación, mantenimiento y cambio de secadores.', NULL, 'mantenimiento-secadores.jpg', NULL, NULL),
+(6, 'Reparaciones y Mantenimiento', 'reparaciones-y-mantenimiento', 'Aire acondicionado, de subestaciones eléctricas, electrobombas y todo tipo de servicio eléctrico.', NULL, 'reparacion-aire.jpeg', NULL, NULL),
+(7, 'Electicidad de Baja tensión', 'electricidad-baja-tension', 'Proyectos eléctricos, climatización extracción y obras eléctricas.', NULL, 'proyecto-baja-media-tension.jpg', NULL, NULL),
+(8, 'Electicidad de Media tensión', 'electricidad-media-tension', 'Reparación, mantenimiento y proyectos de subestaciones eléctricas.', NULL, 'proyecto-media-tension.jpg', NULL, NULL),
 (9, 'Fabricación de tableros', 'fabricacion-de-tableros', 'Elaboración de tableros eléctricos y de transferencia', NULL, 'fabricacion-tableros.jpeg', NULL, NULL),
-(10, 'Tableros eléctricos y de transferencia', 'tableros-electricos-y-de-transferencia', 'Reparación y mantenimiento de tableros eléctricos y de transferencia', NULL, 'tablero-transferencia.jpg', NULL, NULL),
-(11, 'Refrigeración', 'refrigeracion', 'Refrigeración comercial e industrial', NULL, 'refrigeracion.jpg', NULL, NULL),
-(12, 'Mantenimiento e instalaciones eléctricas', 'mantenimiento-instalaciones-electricas', 'Mantenimiento e instalaciones eléctricas', NULL, 'mantenimiento-tableros.jpg', NULL, NULL),
-(13, 'Instalaciones de puestas a tierra', 'instalaciones-de-puestas-a-tierras', 'Instalación de puestas a tierra, mayas, parrarayos', NULL, 'puesta-a-tierra.jpeg', NULL, NULL);
+(10, 'Tableros eléctricos y de transferencia', 'tableros-electricos-y-de-transferencia', 'Reparación y mantenimiento de tableros eléctricos y de transferencia.', NULL, 'tablero-transferencia.jpg', NULL, NULL),
+(11, 'Refrigeración', 'refrigeracion', 'Refrigeración comercial e industrial.', NULL, 'refrigeracion.jpg', NULL, NULL),
+(12, 'Mantenimiento de Instalaciones Eléctricas', 'mantenimiento-instalaciones-electricas', 'Mantenimiento y reparación de instalaciones eléctricas con nuestro equipo profesional.', NULL, 'mantenimiento-tableros.jpg', NULL, NULL),
+(13, 'Instalaciones de puestas a tierra', 'instalaciones-de-puestas-a-tierras', 'Instalación de puestas a tierra, mayas y parrarayos. Seguridad y confianza.', NULL, 'puesta-a-tierra.jpeg', NULL, NULL);
 
 -- --------------------------------------------------------
 
