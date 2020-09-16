@@ -24,8 +24,8 @@
                                 background-size: 66% 66%;
                                 background-repeat: no-repeat;
                                 background-position: center center;"></div>
-                            <h3><a href="#">{{ $item->name }}</a></h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, doloribus!. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea consequuntur molestias, earum at magni esse?</p>
+                            <h3 class="text-center"><a href="#">{{ $item->name }}</a></h3>
+                            {{-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, doloribus!. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea consequuntur molestias, earum at magni esse?</p> --}}
                         </div>
                     @endforeach
                 </div>
