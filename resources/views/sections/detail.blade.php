@@ -2,10 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 ftco-animate">
-              <p><img src="../assets/images/services/{{ $service->image }}" alt="" class="img-fluid" 
+              <p class="d-flex justify-content-center">
+                <img src="../assets/images/services/{{ $service->image }}" alt="" class="img-fluid" 
                 style="background-size: 33% 33%;
                 background-repeat: no-repeat;
-                background-position: center center;"></p>
+                background-position: center center;
+                height: 50vh;
+                width: 50vw;"></p>
               <h2 class="mb-3">{{ $service->name }}</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
             </div>
