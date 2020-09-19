@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-12 col-lg-4 mb-4 mb-md-0">
                 <h2 class="footer-heading">Redes Sociales</h2>
-                <p>Encuentranos en Facebook como: Frigo Electri del Perú E.I.R.L</p>
+                <p>Encuentranos en Facebook como: FrigoElectri del Perú E.I.R.L</p>
                 <ul class="ftco-footer-social p-0">
                     <li class="ftco-animate"><a href="https://web.facebook.com/frigoelectridelperu" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook text-white"></span></a></li>
                 </ul>
@@ -30,7 +30,7 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-12 text-center text-light">
-                <p class="copyright font-weight-bold"> Copyright &copy;<script>document.write(new Date().getFullYear());</script> Frigo Electri E.I.R.L | Desarrollado {{-- <i class="fa fa-heart" aria-hidden="true"></i> --}} por <a class="text-codecix text-dark font-weight-bold" href="https://codecix.com" target="_blank">Codecix.com</a></p>
+                <p class="copyright font-weight-bold"> Copyright &copy;<script>document.write(new Date().getFullYear());</script> FrigoElectri del Perú E.I.R.L | Desarrollado {{-- <i class="fa fa-heart" aria-hidden="true"></i> --}} por <a class="text-codecix text-dark font-weight-bold" href="https://codecix.com" target="_blank">Codecix.com</a></p>
             </div>
         </div>
     </div>
