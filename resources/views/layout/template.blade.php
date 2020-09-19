@@ -18,14 +18,75 @@
     <link rel="stylesheet" href="{{ asset('vendor/css/jquery-ui.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/css/sweetalert2.min.css') }}">
-    {{-- <link rel="stylesheet" href="{{ asset('vendor/css/toastr.min.css') }}"> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('vendor/css/glider.min.css') }}"> --}}
+    <link href="{{ asset('/assets/images/favicon.png') }}" rel="icon">
+	<link href="{{ asset('/assets/images/favicon.png') }}" rel="apple-touch-icon">
     <link rel="stylesheet" href="{{ asset('css/web/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/codecix.css') }}">
 
     <meta name="csrf-token" content="{{ csrf_token() }}" id="my-token">
 
-    <title>Frigo Electri E.I.R.L</title>
+    {{-- SEO --}}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>@yield('title', 'FrigoElectri del Perú')</title>
+
+    <meta name="global" content="distribution">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Codecix">
+    <meta name="title" content="FrigoElectri del Perú">
+    
+    <link rel="alternate" href="{{ env("APP_URL") }}" hreflang="x-default" />
+
+    <meta name="description"content="FrigoElectri del Perú es una empresa que distribuye productos industriales de refrigeración y mantenimiento industrial, comercial y de aire acondicionado." />
+    <meta name="keywords" content="frigoelectri, condensadores, compresores, mantenimiento, aire acondicionado, refrigerantes">
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FrigoElectri del Perú: productos y servicios industriales" />
+    <meta property="og:description" content="FrigoElectri del Perú es una empresa que distribuye productos industriales de refrigeración y mantenimiento industrial, doméstico y de aire acondicionado." />
+    <meta property="og:url" content="{{ env("APP_URL") }}/" />
+    <meta property="og:site_name" content="FrigoElectri del Perú: productos y servicios industriales" />
+    <meta property="article:modified_time" content="2020-06-27T15:05:42+00:00" />
+    <meta property="og:image" content="{{ env("APP_URL") }}/assets/images/seo.png" />
+    <meta property="og:image:width" content="4846" />
+    <meta property="og:image:height" content="3431" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="title" content="FrigoElectri del Perú">
+
+    <link rel="canonical" href="{{url()->full()}}" />
+    
+    <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@graph":[
+            {
+                "@type" : "LocalBusiness",
+                "image" : "{{ env("APP_URL") }}/assets/images/seo.png",
+                "name": "Mcc Refrigeracion",
+                "telephone" : [ "934466479" ],
+                "address" : {
+                    "@type" : "PostalAddress",
+                    "streetAddress" : "Jr. Tupac Amaru Nro. 131 P.J. Collique 1ra Etapa (Alt. Colegio Peru-Holanda)",
+                    "addressLocality" : "COMAS"
+                },
+                "url" : "http://www.frigoelectridelperu.com/",
+                "aggregateRating" : {
+                    "@type" : "AggregateRating",
+                    "ratingValue": "5.0",
+                "reviewCount": "11"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "url": "http://www.frigoelectridelperu.com/"
+            }
+        ]
+    }        
+    </script>
 
 </head>
     <body>
@@ -36,17 +97,8 @@
 
         @include('sections.footer')
 
-        <!-- loader -->
-        <div id="ftco-loader" class="show fullscreen">
-            <svg class="circular" width="48px" height="48px">
-                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
-            </svg>
-        </div>
-
         <script src="{{ asset('vendor/js/jquery.min.js') }}"></script>
         <script src="{{ asset('vendor/js/jquery-migrate-3.0.1.min.js') }}"></script>
-        {{-- <script src="{{ asset('vendor/js/popper.min.js') }}"></script> --}}
         <script src="{{ asset('vendor/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('vendor/js/jquery.easing.1.3.js') }}"></script>
         <script src="{{ asset('vendor/js/jquery.waypoints.min.js') }}"></script>
@@ -59,8 +111,6 @@
         <script src="{{ asset('vendor/js/jquery-ui.min.js') }}"></script>
         <script src="{{ asset('vendor/js/scrollax.min.js') }}"></script>
         <script src="{{ asset('vendor/js/sweetalert2.min.js') }}"></script>
-        {{-- <script src="{{ asset('vendor/js/toastr.min.js') }}"></script> --}}
-        {{-- <script src="{{ asset('vendor/js/glider.min.js') }}"></script> --}}
         <script src="{{ asset('js/web/main.js') }}"></script>
         <script src="{{ asset('js/web/search.js') }}"></script>
         

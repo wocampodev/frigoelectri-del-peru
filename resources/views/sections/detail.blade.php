@@ -11,7 +11,7 @@
                 background-position: center center; 
                 background-image: url('../assets/images/services/{{ $service->image }}');"></div></p>
               <h2 class="mb-3">{{ $service->name }}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
+                <p>{{ $service->short_description }}</p>
             </div>
             <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
               <div class="sidebar-box ftco-animate">
