@@ -13,9 +13,3 @@
     @include('sections.goals')
 
 @endsection
-
-{{-- @section('scripts')
-    
-    <script src="js/web/home.js"></script>
-
-@endsection --}}

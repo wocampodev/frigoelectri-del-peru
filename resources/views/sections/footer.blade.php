@@ -23,7 +23,7 @@
                     <ul>
                         <li><span class="icon fa fa-map"></span><span class="text">Jr. Tupac Amaru Nro. 131 P.J. Collique 1ra Etapa (Alt. Colegio Peru-Holanda)</span></li>
                         <li><a href="tel://51934466479"><span class="icon fa fa-phone"></span><span class="text">+51 934 466 479</span></a></li>
-                        <li><a href="mailto:frigoelectridelperueirl@gmail.com"><span class="icon fa fa-paper-plane"></span><span class="text">frigoelectridelperueirl@gmail.com</span></a></li>
+                        <li><a href="mailto:frigoelectridelperueirl@gmail.com"><span class="icon fa fa-paper-plane"></span><span class="text">ventas@frigoelectridelperu.com</span></a></li>
                     </ul>
                 </div>
             </div>

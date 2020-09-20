@@ -17,6 +17,9 @@
     .container-fluid {
         width: 100%;
     }
+    .logo {
+        height: 64px;
+    }
 }
 
 @media (min-width: 768px){
@@ -55,70 +58,6 @@
 
 /* 
 =========================================
-                CAROUSEL
-=========================================
-*/
-
-.carousel__container {
-	position: relative;
-}
-
-.carousel__previous,
-.carousel__next {
-	position: absolute;
-	display: block;
-	width: 30px;
-	height: 30px;
-	border: none;
-	top: calc(50% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color: var(--main-color);
-	/* opacity: 20%; */
-}
-
-/* .carousel__previous:hover,
-.carousel__next:hover {
-	opacity: 100%;
-} */
-
-.carousel__previous {
-	left: -30px;
-}
-
-.carousel__next {
-	right: 30px;
-}
-
-.carousel__list {
-	overflow: hidden;
-}
-
-.carousel__element {
-    text-align: center;
-}
-
-.carousel__indicators .glider-dot {
-	display: block;
-	width: 30px;
-	height: 4px;
-	background: var(--main-color);
-	opacity: .2;
-	border-radius: 0;
-}
-
-.carousel__indicators .glider-dot:hover {
-	opacity: .5;
-}
-
-.carousel__indicators .glider-dot.active {
-	opacity: 1;
-}
-
-/* 
-=========================================
                 REASONS
 =========================================
 */
@@ -126,6 +65,9 @@
 @media (max-width: 767.98px){
     .img-video {
         height: 576px;
+    }
+    .logo {
+        height: 64px;
     }
 }
 

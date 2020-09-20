@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container-fluid px-5">
-        <a class="navbar-brand" href="/">Frigo <span>Electri</span></a>
+        <a class="navbar-brand" href="/">
+            <img src="{{ asset('assets/images/navbar.png') }}" alt="" class="img-fluid logo">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span> Menu
         </button>

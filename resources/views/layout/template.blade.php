@@ -65,8 +65,8 @@
         "@graph":[
             {
                 "@type" : "LocalBusiness",
-                "image" : "{{ env("APP_URL") }}/assets/images/seo.png",
-                "name": "Mcc Refrigeracion",
+                "image" : "{{ env("APP_URL") }}/assets/images/seopng.png",
+                "name": "FrigoElectri del Perú",
                 "telephone" : [ "934466479" ],
                 "address" : {
                     "@type" : "PostalAddress",
@@ -90,6 +90,8 @@
 
 </head>
     <body>
+        
+        @include('sections.wrap')
         
         @include('sections.navbar')
 

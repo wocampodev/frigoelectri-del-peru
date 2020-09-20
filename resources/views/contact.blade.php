@@ -36,7 +36,7 @@
                                         <span class="fa fa-paper-plane"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Email:</span> <a href="mailto:frigoelectridelperueirl@gmail.com" class="text-primary">frigoelectridelperueirl@gmail.com</a></p>
+                                        <p><span>Email:</span> <a href="mailto:ventas@frigoelectridelperu.com" class="text-primary">ventas@frigoelectridelperu.com</a></p>
                                     </div>
                                 </div>
                             </div>
