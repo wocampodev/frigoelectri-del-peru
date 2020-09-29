@@ -37,7 +37,7 @@
     
     <link rel="alternate" href="{{ env("APP_URL") }}" hreflang="x-default" />
 
-    <meta name="description"content="FrigoElectri del Perú es una empresa que distribuye productos industriales de refrigeración y mantenimiento industrial, comercial y de aire acondicionado." />
+    <meta name="description"content="Frigoelectri del Perú es un empresa con amplia experiencia en proyectos eléctricos, mantenimiento eléctrico y reparación de equipos. Brindamos garantía en todos nuestros servicios." />
     <meta name="keywords" content="frigoelectri, condensadores, compresores, mantenimiento, aire acondicionado, refrigerantes">
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
@@ -45,10 +45,10 @@
 
     <meta property="og:locale" content="es_PE" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="FrigoElectri del Perú: productos y servicios industriales" />
-    <meta property="og:description" content="FrigoElectri del Perú es una empresa que distribuye productos industriales de refrigeración y mantenimiento industrial, doméstico y de aire acondicionado." />
+    <meta property="og:title" content="Frigoelectri del Perú: productos, servicios y proyectos eléctricos" />
+    <meta property="og:description" content="Frigoelectri del Perú es un empresa con amplia experiencia en proyectos eléctricos, mantenimiento eléctrico y reparación de equipos. Brindamos garantía en todos nuestros servicios." />
     <meta property="og:url" content="{{ env("APP_URL") }}/" />
-    <meta property="og:site_name" content="FrigoElectri del Perú: productos y servicios industriales" />
+    <meta property="og:site_name" content="Frigoelectri del Perú: productos, servicios y proyectos eléctricos" />
     <meta property="article:modified_time" content="2020-06-27T15:05:42+00:00" />
     <meta property="og:image" content="{{ env("APP_URL") }}/assets/images/seo.png" />
     <meta property="og:image:width" content="4846" />
@@ -65,7 +65,7 @@
         "@graph":[
             {
                 "@type" : "LocalBusiness",
-                "image" : "{{ env("APP_URL") }}/assets/images/seopng.png",
+                "image" : "{{ env("APP_URL") }}/assets/images/frigoelectridelperu-seo.png",
                 "name": "FrigoElectri del Perú",
                 "telephone" : [ "934466479" ],
                 "address" : {
