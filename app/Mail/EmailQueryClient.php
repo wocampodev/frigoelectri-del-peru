@@ -26,8 +26,8 @@ class EmailQueryClient extends Mailable
         $this->company = [
             //'phone' => '962863959/969084311',
             //'email' => 'ventas@mcc-refrigeracion.com'
-            'phone' => '928564123',
-            'email' => 'walter@codecix.com'
+            'phone' => '934 466 479',
+            'email' => 'ventas@frigoelectridelperu.com'
         ];
     }
 

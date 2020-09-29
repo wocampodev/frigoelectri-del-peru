@@ -25,7 +25,7 @@ class EmailConfirmService extends Mailable
         $this->service = $service;
         $this->company = [
             'phone' => '934 466 479',
-            'email' => 'frigoelectridelperueirl@gmail.com'
+            'email' => 'ventas@frigoelectridelperu.com'
         ];
     }
 

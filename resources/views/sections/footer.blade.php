@@ -21,7 +21,7 @@
                 <h2 class="footer-heading">Contacto</h2>
                 <div class="block-23 mb-3">
                     <ul>
-                        <li><span class="icon fa fa-map"></span><span class="text">Jr. Tupac Amaru Nro. 131 P.J. Collique 1ra Etapa (Alt. Colegio Peru-Holanda)</span></li>
+                        <li><span class="icon fa fa-map"></span><span class="text">Calle Los Lirios Mz. I Lote 07 A.H. Juan Noel Lastra-Paita</span></li>
                         <li><a href="tel://51934466479"><span class="icon fa fa-phone"></span><span class="text">+51 934 466 479</span></a></li>
                         <li><a href="mailto:frigoelectridelperueirl@gmail.com"><span class="icon fa fa-paper-plane"></span><span class="text">ventas@frigoelectridelperu.com</span></a></li>
                     </ul>
