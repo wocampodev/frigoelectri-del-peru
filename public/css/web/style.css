@@ -9051,7 +9051,7 @@ textarea.form-control {
     .footer .block-23 ul li .icon {
       color: rgba(255, 255, 255, 0.4); }
   .footer .ftco-footer-social li a {
-    background: rgba(255, 255, 255, 0.1);
+    background: #000000;
     color: #0056b3; }
 
 .ftco-footer-social li {
@@ -9700,3 +9700,11 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .footer-copyrigth{
+      background-color: white;
+      color: #0056b3;
+    }
+    .text-footer-copyright{
+      color:#0056b3;
+    }
