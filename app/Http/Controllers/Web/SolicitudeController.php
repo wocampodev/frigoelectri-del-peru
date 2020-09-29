@@ -42,7 +42,8 @@ class SolicitudeController extends Controller
         } else {
             //$data_company = Company::data_company();
             //$email_company = $data_company->email;
-            $email_company = 'fearless347@gmail.com';
+            //$email_company = 'fearless347@gmail.com';
+            $email_company = Company::data_company();
 
             $client['name'] = $name;
             $client['email'] = $email;

@@ -47,9 +47,9 @@ class OrderController extends Controller
             $response = ['status'=>'fail-validate', 'errors' => $validation->errors()];
         }else{
 
-            //$data_company = Company::data_company();
+            $email_company = Company::data_company();
             //$email_company = $data_company->email;
-            $email_company = 'fearless347@gmail.com';
+            //$email_company = 'fearless347@gmail.com';
             $search_service = Service::select('name')->where('id', $service_id)->first();
 
             $service_name = $search_service->name;

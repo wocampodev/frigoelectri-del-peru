@@ -16,7 +16,7 @@
                                         <span class="fa fa-map-marker"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Dirección:</span> <span class="text-primary">Jr. Tupac Amaru Nro. 131 P.J. Collique 1ra Etapa (Alt. Colegio Peru-Holanda)</span></p>
+                                        <p><span>Dirección:</span> <span class="text-primary">Calle Los Lirios Mz. I Lote 07 A.H. Juan Noel Lastra-Paita</span></p>
                                     </div>
                                 </div>
                             </div>

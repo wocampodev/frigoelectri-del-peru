@@ -70,8 +70,8 @@
                 "telephone" : [ "934466479" ],
                 "address" : {
                     "@type" : "PostalAddress",
-                    "streetAddress" : "Jr. Tupac Amaru Nro. 131 P.J. Collique 1ra Etapa (Alt. Colegio Peru-Holanda)",
-                    "addressLocality" : "COMAS"
+                    "streetAddress" : "Calle Los Lirios Mz. I Lote 07 A.H. Juan Noel Lastra",
+                    "addressLocality" : "PAITA"
                 },
                 "url" : "http://www.frigoelectridelperu.com/",
                 "aggregateRating" : {

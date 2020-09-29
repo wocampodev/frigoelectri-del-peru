@@ -6,7 +6,7 @@
         @endcomponent
     @endslot
     
-    {{-- ![Frigo Electric del Perú E.I.R.L](https://mcc-refrigeracion.com/assets/img/mcc-refrigeracion-seo.png) --}}
+    ![Frigo Electric del Perú E.I.R.L](https://mcc-refrigeracion.com/assets/img/frigoelectridelperu-seo.png)
 
     {{-- Body --}}
     {{ $slot }}
