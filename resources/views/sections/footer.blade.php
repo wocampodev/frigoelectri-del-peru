@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-4 mb-4 mb-md-0">
-                <h2 class="footer-heading">Redes Sociales</h2>
-                <p>Encuentranos en Facebook como: FrigoElectri del Perú E.I.R.L</p>
+                <h2 class="footer-heading">FrigoElectri del Perú</h2>
+                <p>Frigoelectri del Perú es un empresa con amplia experiencia en proyectos eléctricos, mantenimiento eléctrico y reparación de equipos. Brindamos garantía en todos nuestros servicios.</p>
                 <ul class="ftco-footer-social p-0">
                     <li class="ftco-animate"><a href="https://web.facebook.com/frigoelectridelperu" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook text-white"></span></a></li>
                 </ul>
