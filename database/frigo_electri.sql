@@ -126,14 +126,14 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `name`, `slug`, `short_description`, `long_description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Instalaciones de Gases', 'instalaciones-de-gases', 'Nuestro servicio de instalación de gases cumple con los protocolos de seguridad de acuerdo a la necesidad de tu organización.', NULL, 'instalacion-gas-medicinal.jpeg', NULL, NULL),
+(1, 'Instalaciones de Gases Medicinales', 'instalaciones-de-gases', 'Nuestro servicio de instalación de gases cumple con los protocolos de seguridad de acuerdo a la necesidad de tu organización.', NULL, 'instalacion-gas-medicinal.jpeg', NULL, NULL),
 (2, 'Aire Acondicionado', 'aire-acondicionado', 'Instalación, limpieza y mantenimiento de aire acondicionado.', NULL, 'mantenimiento-aire-acondicionado.jpg', NULL, NULL),
 (3, 'Ventilación Interna', 'ventilacion', 'Instalación, mantenimiento, reparación y puesta en marcha de la ventilación que tu empresa u oficina necesita.', NULL, 'ventilacion.jpeg', NULL, NULL),
-(4, 'Aire Acondicionado Automotriz', 'aire-acondicionado-automotriz', 'Reparación y mantenimiento de aire acondicionado automotriz.', NULL, 'aire-acondicionado-automotriz.jpeg', NULL, NULL),
+(4, 'Proyectos Eléctricos e Ingeniería Electromecánica', 'proyectos-electricos', 'Realizamos todo tipo de proyectos electricos y de ingeniería electromecánica', NULL, 'aire-acondicionado-automotriz.jpeg', NULL, NULL),
 (5, 'Secadores', 'secadores', 'Instalación, mantenimiento y cambio de secadores.', NULL, 'mantenimiento-secadores.jpg', NULL, NULL),
 (6, 'Reparaciones y Mantenimiento', 'reparaciones-y-mantenimiento', 'Aire acondicionado, de subestaciones eléctricas, electrobombas y todo tipo de servicio eléctrico.', NULL, 'reparacion-aire.jpeg', NULL, NULL),
-(7, 'Electicidad de Baja tensión', 'electricidad-baja-tension', 'Proyectos eléctricos, climatización extracción y obras eléctricas.', NULL, 'proyecto-baja-media-tension.jpg', NULL, NULL),
-(8, 'Electicidad de Media tensión', 'electricidad-media-tension', 'Reparación, mantenimiento y proyectos de subestaciones eléctricas.', NULL, 'proyecto-media-tension.jpg', NULL, NULL),
+(7, 'Electricidad de Baja tensión', 'electricidad-baja-tension', 'Proyectos eléctricos, climatización extracción y obras eléctricas.', NULL, 'proyecto-baja-media-tension.jpg', NULL, NULL),
+(8, 'Electricidad de Media tensión', 'electricidad-media-tension', 'Reparación, mantenimiento y proyectos de subestaciones eléctricas.', NULL, 'proyecto-media-tension.jpg', NULL, NULL),
 (9, 'Fabricación de tableros', 'fabricacion-de-tableros', 'Elaboración de tableros eléctricos y de transferencia', NULL, 'fabricacion-tableros.jpeg', NULL, NULL),
 (10, 'Tableros eléctricos y de transferencia', 'tableros-electricos-y-de-transferencia', 'Reparación y mantenimiento de tableros eléctricos y de transferencia.', NULL, 'tablero-transferencia.jpg', NULL, NULL),
 (11, 'Refrigeración', 'refrigeracion', 'Refrigeración comercial e industrial.', NULL, 'refrigeracion.jpg', NULL, NULL),
