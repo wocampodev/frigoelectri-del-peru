@@ -34,6 +34,6 @@
 
 <div class="row mt-5 footer-copyright">
     <div class="col-md-12 text-center">
-        <p class="copyright font-weight-bold text-footer-copyright"> Copyright &copy;<script>document.write(new Date().getFullYear());</script> FrigoElectri del Perú E.I.R.L | Desarrollado {{-- <i class="fa fa-heart" aria-hidden="true"></i> --}} por <a class="text-codecix text-dark font-weight-bold" href="https://codecix.com" target="_blank">Codecix.com</a></p>
+        <p class="copyright font-weight-bold text-footer-copyright"> Copyright &copy;<script>document.write(new Date().getFullYear());</script> FrigoElectri del Perú E.I.R.L | Desarrollado {{-- <i class="fa fa-heart" aria-hidden="true"></i> --}} por <a class="text-codecix text-dark font-weight-bold" href="https://codecix.com" target="_blank">codecix.com</a></p>
     </div>
 </div>
