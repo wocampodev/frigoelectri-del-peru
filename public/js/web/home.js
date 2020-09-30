@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+/* window.addEventListener('load', function(){
     new Glider(document.querySelector('.carousel__list'), {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -11,4 +11,11 @@ window.addEventListener('load', function(){
             next: '.carousel__next'
         }
     });
+}); */
+
+$('#autoplay').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
