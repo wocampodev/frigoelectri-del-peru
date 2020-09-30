@@ -3,6 +3,10 @@
     --secondary-color: #ffd31d;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* 
 =========================================
                 NAVBAR

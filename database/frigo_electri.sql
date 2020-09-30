@@ -40,14 +40,14 @@ CREATE TABLE `clients` (
 --
 
 INSERT INTO `clients` (`id`, `name`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'AGROAURORA', 'agroaurora.jpg', NULL, NULL),
-(2, 'AGROLATAM', 'agrolatam.jpg', NULL, NULL),
-(3, 'AGROLMOS', 'agrolmos.jpg', NULL, NULL),
-(4, 'BODYTECH', 'bodytech.jpg', NULL, NULL),
-(5, 'OSORIA SMILE', 'osoria.jpg', NULL, NULL),
-(6, 'AGRICOLA PAMPABAJA S.A.C', 'pampabaja.jpg', NULL, NULL),
-(7, 'BETA - COMPLEJO AGROINDUSTRIAL', 'beta.jpg', NULL, NULL),
-(8, 'VITALINE', 'vitaline.jpg', NULL, NULL);
+(1, 'AGROAURORA', 'agroaurora.png', NULL, NULL),
+(2, 'AGROLATAM', 'agrolatam.png', NULL, NULL),
+(3, 'AGROLMOS', 'agrolmos.png', NULL, NULL),
+(4, 'BODYTECH', 'bodytech.png', NULL, NULL),
+(5, 'OSORIA SMILE', 'osoria.png', NULL, NULL),
+(6, 'AGRICOLA PAMPABAJA S.A.C', 'pampabaja.png', NULL, NULL),
+(7, 'BETA - COMPLEJO AGROINDUSTRIAL', 'beta.png', NULL, NULL),
+(8, 'VITALINE', 'vitaline.png', NULL, NULL);
 
 -- --------------------------------------------------------
 
