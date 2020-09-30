@@ -58,6 +58,8 @@
     <meta name="title" content="FrigoElectri del Perú">
 
     <link rel="canonical" href="{{url()->full()}}" />
+
+    @yield('styles')
     
     <script type="application/ld+json">
     {
@@ -95,7 +97,7 @@
         
         @include('sections.navbar')
 
-        @yield('content')
+            @yield('content')
 
         @include('sections.footer')
 
