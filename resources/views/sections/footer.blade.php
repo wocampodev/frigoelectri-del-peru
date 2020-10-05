@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-12 col-lg-4 mb-4 mb-md-0">
                 <h2 class="footer-heading">FrigoElectri del Perú</h2>
-                <p>Frigoelectri del Perú es un empresa con amplia experiencia en proyectos eléctricos, mantenimiento eléctrico y reparación de equipos. Brindamos garantía en todos nuestros servicios.</p>
+                <h1 style="color: #FAFAFA; font-size: 13px;">Frigoelectri del Perú es un empresa con amplia experiencia en proyectos eléctricos, mantenimiento eléctrico y reparación de equipos. Brindamos garantía en todos nuestros servicios.</h1>
                 <ul class="ftco-footer-social p-0">
                     <li class="ftco-animate"><a href="https://web.facebook.com/frigoelectridelperu" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook text-white"></span></a></li>
                 </ul>
