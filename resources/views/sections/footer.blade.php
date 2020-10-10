@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-12 col-lg-4 mb-4 mb-md-0">
                 <h2 class="footer-heading">FrigoElectri del Perú</h2>
-                <h1 style="color: #FAFAFA; font-size: 13px;">Frigoelectri del Perú es un empresa con amplia experiencia en proyectos eléctricos, mantenimiento eléctrico y reparación de equipos. Brindamos garantía en todos nuestros servicios.</h1>
+                <span class="descripcion-empresa">Frigoelectri del Perú es un empresa con amplia experiencia en proyectos eléctricos, mantenimiento eléctrico y reparación de equipos. Brindamos garantía en todos nuestros servicios.</span>
                 <ul class="ftco-footer-social p-0">
                     <li class="ftco-animate"><a href="https://web.facebook.com/frigoelectridelperu" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook text-white"></span></a></li>
                 </ul>
@@ -23,7 +23,7 @@
                     <ul>
                         <li><span class="icon fa fa-map"></span><span class="text">Calle Los Lirios Mz. I Lote 07 A.H. Juan Noel Lastra-Paita</span></li>
                         <li><a href="tel://51934466479"><span class="icon fa fa-phone"></span><span class="text">+51 934 466 479</span></a></li>
-                        <li><a href="mailto:frigoelectridelperueirl@gmail.com"><span class="icon fa fa-paper-plane"></span><span class="text">ventas@frigoelectridelperu.com</span></a></li>
+                        <li><a href=ventas@frigoelectridelperu.com"><span class="icon fa fa-paper-plane"></span><span class="text">ventas@frigoelectridelperu.com</span></a></li>
                     </ul>
                 </div>
             </div>

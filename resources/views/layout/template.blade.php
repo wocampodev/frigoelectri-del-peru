@@ -38,7 +38,7 @@
     <link rel="alternate" href="{{ env("APP_URL") }}" hreflang="x-default" />
 
     <meta name="description"content="Frigoelectri del Perú es un empresa con amplia experiencia en proyectos eléctricos, mantenimiento eléctrico y reparación de equipos. Brindamos garantía en todos nuestros servicios." />
-    <meta name="keywords" content="frigoelectri, condensadores, compresores, mantenimiento, aire acondicionado, refrigerantes">
+    <meta name="keywords" content="frigoelectri, FrigoElectri, condensadores, compresores, mantenimiento, aire acondicionado, refrigerantes">
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <meta name="bingbot" content="index, follow" />
