@@ -5,25 +5,20 @@
     @include('sections.hero-secondary')
 
     <div class="container mb-5">
-        <div class="row d-flex no-gutters align-items-stretch mt-3">
-            <div class="col-lg-5 mr-auto p-lg-5 mt-4 mt-lg-0 order-lg-1 aos-init aos-animate" data-aos="fade-right" data-aos-delay="">
+        <div class="row pt-5">
+            <div class="col-md-6">
                 <h3 class="text-primary">Misión</h3>
-                <p>Ser la primera empresa en la zona norte brindando un servicio en venta, reparación de equipos electromecánicos y proyectos. Brindando garantía en todos nuestros servicios.</p>
+                <p style="text-align: justify;">Ser la primera empresa en la zona norte brindando un servicio en venta, reparación de equipos electromecánicos y proyectos. Brindando garantía en todos nuestros servicios.</p>
             </div>
-        </div>
-        <div class="row d-flex no-gutters align-items-stretch">
-            <div class="col-12 col-lg-6 block__73422 order-lg-2 aos-init aos-animate" style="background-image: url('assets/images/services-8.jpg');" data-aos="fade-left" data-aos-delay=""></div>
-            <div class="col-lg-5 mr-auto p-lg-5 mt-4 mt-lg-0 order-lg-1 aos-init aos-animate" data-aos="fade-right" data-aos-delay="">
-                <h3 class="text-primary"></h3>
-                <p style="height: 140px;"></p>
-            </div>
-        </div>
-        <div class="row d-flex no-gutters align-items-stretch">
-            <div class="col-lg-5 mr-auto p-lg-5 mt-4 mt-lg-0 order-lg-1 aos-init aos-animate" data-aos="fade-right" data-aos-delay="">
+            <div class="col-md-6">
                 <h3 class="text-primary">Visión</h3>
-                <p>Ser la primera empresa en la zona norte brindando un servicio en venta, reparación de equipos electromecánicos y proyectos. Brindando garantía en todos nuestros servicios.</p>
+                <p style="text-align: justify;">Brindar a nuestros clientes, servicios de alta calidad y confiabilidad brindándoles garantía a costos de acuerdo al mercado.De acuerdo a las exigencias del mercado competido ser líder  y cumpliendo con el cuidado del medio ambiente y ser una empresa altanamente amigable con el medio ambiente.</p>
             </div>
-            <div class="col-12 col-lg-6 block__73422 order-lg-2 aos-init aos-animate" data-aos="fade-right" data-aos-delay=""></div>
+        </div>
+        <div class="row pt-5 d-flex justify-content-center">
+            <div class="col-md-6">
+                <img src="assets/images/services-8.jpg" alt="" class="img-fluid">
+            </div>
         </div>
     </div>
 

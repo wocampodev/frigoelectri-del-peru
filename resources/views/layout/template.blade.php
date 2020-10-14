@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="{{ asset('vendor/css/sweetalert2.min.css') }}">
     <link href="{{ asset('/assets/images/favicon.png') }}" rel="icon">
 	<link href="{{ asset('/assets/images/favicon.png') }}" rel="apple-touch-icon">
-    <link rel="stylesheet" href="{{ asset('css/web/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/web/codecix.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/style.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/codecix.min.css') }}">
 
     <meta name="csrf-token" content="{{ csrf_token() }}" id="my-token">
 
@@ -115,8 +115,8 @@
         <script src="{{ asset('vendor/js/jquery-ui.min.js') }}"></script>
         <script src="{{ asset('vendor/js/scrollax.min.js') }}"></script>
         <script src="{{ asset('vendor/js/sweetalert2.min.js') }}"></script>
-        <script src="{{ asset('js/web/main.js') }}"></script>
-        <script src="{{ asset('js/web/search.js') }}"></script>
+        <script src="{{ asset('js/web/main.min.js') }}"></script>
+        <script src="{{ asset('js/web/search.min.js') }}"></script>
         
         @yield('scripts')
 
